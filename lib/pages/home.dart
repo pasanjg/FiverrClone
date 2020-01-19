@@ -10,7 +10,8 @@ class HomePage extends StatefulWidget {
 
 class _HomePageState extends State<HomePage>
     with SingleTickerProviderStateMixin {
-  double _levelsHeight = 75.0;
+  double _levelsHeight = 60.0;
+  double _requirementsTapMinHeight = 60.0;
   double _levelsMaxHeight = 400.0;
   double _defaultFontSize = 16.0;
 
@@ -55,8 +56,307 @@ class _HomePageState extends State<HomePage>
       body: ListView(
         children: <Widget>[
           Container(
-            height: MediaQuery.of(context).size.height / 2,
+            height: 300.0,
             color: Colors.black87,
+            child: Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: Column(
+                children: <Widget>[
+                  Padding(
+                    padding: const EdgeInsets.only(top: 8.0, bottom: 16.0),
+                    child: Flex(
+                      direction: Axis.horizontal,
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: <Widget>[
+                        Text(
+                          "Standards to maintain",
+                          style: TextStyle(
+                            color: Colors.white,
+                            fontSize: 20.0,
+                            fontWeight: FontWeight.bold,
+                          ),
+                        ),
+                        InkWell(
+                          onTap: () {},
+                          child: Icon(
+                            Icons.help_outline,
+                            color: Colors.white,
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.only(bottom: 8.0),
+                    child: Flex(
+                      direction: Axis.horizontal,
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: <Widget>[
+                        Text(
+                          "Seller level",
+                          style: TextStyle(
+                            color: Colors.white,
+                            fontWeight: FontWeight.bold,
+                          ),
+                        ),
+                        Text(
+                          "Level One",
+                          style: TextStyle(
+                            color: Colors.grey,
+                            fontWeight: FontWeight.bold,
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.only(bottom: 8.0),
+                    child: Flex(
+                      direction: Axis.horizontal,
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: <Widget>[
+                        Text(
+                          "Next evaluation",
+                          style: TextStyle(
+                            color: Colors.white,
+                            fontWeight: FontWeight.bold,
+                          ),
+                        ),
+                        Text(
+                          "Feb 15, 2020",
+                          style: TextStyle(
+                            color: Colors.grey,
+                            fontWeight: FontWeight.bold,
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.only(bottom: 8.0),
+                    child: Flex(
+                      direction: Axis.horizontal,
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: <Widget>[
+                        Text(
+                          "Response Time",
+                          style: TextStyle(
+                            color: Colors.white,
+                            fontWeight: FontWeight.bold,
+                          ),
+                        ),
+                        Text(
+                          "1 Hour",
+                          style: TextStyle(
+                            color: Theme.of(context).accentColor,
+                            fontWeight: FontWeight.bold,
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.only(
+                        top: 30.0, bottom: 20.0, left: 8.0, right: 8.0),
+                    child: Flex(
+                      direction: Axis.horizontal,
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: <Widget>[
+                        Column(
+                          children: <Widget>[
+                            Tooltip(
+                              message:
+                                  "Respond to 90% of the inquiries\nyou received in the last 60 days",
+                              textStyle: TextStyle(
+                                color: Colors.black,
+                              ),
+                              verticalOffset: 90.0,
+                              padding: EdgeInsets.all(8.0),
+                              margin: EdgeInsets.all(10.0),
+                              decoration: BoxDecoration(
+                                color: Colors.white,
+                              ),
+                              child: Container(
+                                height: 70.0,
+                                width: 70.0,
+                                alignment: Alignment.center,
+                                child: Text(
+                                  "100%",
+                                  style: TextStyle(
+                                    color: Colors.white,
+                                    fontSize: 20.0,
+                                    fontWeight: FontWeight.bold,
+                                  ),
+                                ),
+                                decoration: BoxDecoration(
+                                  border: Border.all(
+                                      width: 3,
+                                      color: Theme.of(context).accentColor),
+                                  shape: BoxShape.circle,
+                                ),
+                              ),
+                            ),
+                            Padding(
+                              padding: const EdgeInsets.only(top: 8.0),
+                              child: Text(
+                                "Response\nrate",
+                                style: TextStyle(
+                                  color: Colors.white,
+                                ),
+                                textAlign: TextAlign.center,
+                              ),
+                            ),
+                          ],
+                        ),
+                        Column(
+                          children: <Widget>[
+                            Tooltip(
+                              message:
+                                  "Complete 90% of your orders,\nover the course of 60 days",
+                              textStyle: TextStyle(
+                                color: Colors.black,
+                              ),
+                              verticalOffset: 90.0,
+                              padding: EdgeInsets.all(8.0),
+                              margin: EdgeInsets.all(10.0),
+                              decoration: BoxDecoration(
+                                color: Colors.white,
+                              ),
+                              child: Container(
+                                height: 70.0,
+                                width: 70.0,
+                                alignment: Alignment.center,
+                                child: Text(
+                                  "100%",
+                                  style: TextStyle(
+                                    color: Colors.white,
+                                    fontSize: 20.0,
+                                    fontWeight: FontWeight.bold,
+                                  ),
+                                ),
+                                decoration: BoxDecoration(
+                                  border: Border.all(
+                                      width: 3,
+                                      color: Theme.of(context).accentColor),
+                                  shape: BoxShape.circle,
+                                ),
+                              ),
+                            ),
+                            Padding(
+                              padding: const EdgeInsets.only(top: 8.0),
+                              child: Text(
+                                "Order\ncompletion",
+                                style: TextStyle(
+                                  color: Colors.white,
+                                ),
+                                textAlign: TextAlign.center,
+                              ),
+                            ),
+                          ],
+                        ),
+                        Column(
+                          children: <Widget>[
+                            Tooltip(
+                              message:
+                                  "Deliver 90% of your orders on time,\nover the course of 60 days",
+                              textStyle: TextStyle(
+                                color: Colors.black,
+                              ),
+                              verticalOffset: 90.0,
+                              padding: EdgeInsets.all(8.0),
+                              margin: EdgeInsets.all(10.0),
+                              decoration: BoxDecoration(
+                                color: Colors.white,
+                              ),
+                              child: Container(
+                                height: 70.0,
+                                width: 70.0,
+                                alignment: Alignment.center,
+                                child: Text(
+                                  "100%",
+                                  style: TextStyle(
+                                    color: Colors.white,
+                                    fontSize: 20.0,
+                                    fontWeight: FontWeight.bold,
+                                  ),
+                                ),
+                                decoration: BoxDecoration(
+                                  border: Border.all(
+                                      width: 3,
+                                      color: Theme.of(context).accentColor),
+                                  shape: BoxShape.circle,
+                                ),
+                              ),
+                            ),
+                            Padding(
+                              padding: const EdgeInsets.only(top: 8.0),
+                              child: Text(
+                                "On-time\ndelivery",
+                                style: TextStyle(
+                                  color: Colors.white,
+                                ),
+                                textAlign: TextAlign.center,
+                              ),
+                            ),
+                          ],
+                        ),
+                        Column(
+                          children: <Widget>[
+                            Tooltip(
+                              message:
+                                  "Maintain a 4.7 star rating or above,\nover the course of 60 days",
+                              textStyle: TextStyle(
+                                color: Colors.black,
+                              ),
+                              verticalOffset: 90.0,
+                              padding: EdgeInsets.all(8.0),
+                              margin: EdgeInsets.all(10.0),
+                              decoration: BoxDecoration(
+                                color: Colors.white,
+                              ),
+                              child: Container(
+                                height: 70.0,
+                                width: 70.0,
+                                alignment: Alignment.center,
+                                child: Text(
+                                  "5.0",
+                                  style: TextStyle(
+                                    color: Colors.white,
+                                    fontSize: 20.0,
+                                    fontWeight: FontWeight.bold,
+                                  ),
+                                ),
+                                decoration: BoxDecoration(
+                                  border: Border.all(
+                                      width: 3,
+                                      color: Theme.of(context).accentColor),
+                                  shape: BoxShape.circle,
+                                ),
+                              ),
+                            ),
+                            Padding(
+                              padding: const EdgeInsets.only(top: 8.0),
+                              child: Text(
+                                "Positive\nrating",
+                                style: TextStyle(
+                                  color: Colors.white,
+                                ),
+                                textAlign: TextAlign.center,
+                              ),
+                            ),
+                          ],
+                        ),
+                      ],
+                    ),
+                  ),
+                ],
+              ),
+            ),
           ),
           AnimatedContainer(
             curve: Curves.easeInOut,
@@ -71,29 +371,34 @@ class _HomePageState extends State<HomePage>
                   onTap: () {
                     setState(() {
                       // animate level requirements container
-                      _levelsHeight =
-                          _levelsHeight == 75.0 ? _levelsMaxHeight : 75.0;
+                      _levelsHeight = _levelsHeight == _requirementsTapMinHeight
+                          ? _levelsMaxHeight
+                          : _requirementsTapMinHeight;
 
                       // animate dropdown icon
-                      _levelsHeight > 75.0
+                      _levelsHeight > _requirementsTapMinHeight
                           ? _controller.forward()
                           : _controller.reverse();
                     });
                   },
                   child: Container(
-                    height: 75.0,
+                    height: _requirementsTapMinHeight,
                     decoration: BoxDecoration(
                       border: Border(
-                        top: BorderSide(color: Colors.white10, width: 0.5),
+                        top: BorderSide(
+                          color: Colors.white10,
+                          width: 0.5,
+                        ),
                       ),
                     ),
                     child: ListTile(
                       title: Text(
                         "Next level requirements",
                         style: TextStyle(
-                            color: Colors.white,
-                            fontSize: 18.0,
-                            fontWeight: FontWeight.w500),
+                          color: Colors.white,
+                          fontSize: 18.0,
+                          fontWeight: FontWeight.w500,
+                        ),
                       ),
                       trailing: AnimatedBuilder(
                         builder: (context, child) {
@@ -123,14 +428,17 @@ class _HomePageState extends State<HomePage>
                           title: Text(
                             "Selling Seniority",
                             style: TextStyle(
-                                color: Colors.white,
-                                fontSize: _defaultFontSize),
+                              color: Colors.white,
+                              fontSize: _defaultFontSize,
+                            ),
                           ),
                           subtitle: Padding(
                             padding: const EdgeInsets.only(top: 5.0),
                             child: Text(
                               "Complete at least 120 days as a Level One Seller.",
-                              style: TextStyle(color: Colors.white30),
+                              style: TextStyle(
+                                color: Colors.white30,
+                              ),
                             ),
                           ),
                           trailing: Text(
@@ -208,7 +516,9 @@ class _HomePageState extends State<HomePage>
                             padding: const EdgeInsets.only(top: 5.0),
                             child: Text(
                               "Avoid reveiving warnings for TOS\nviolations over the course of 30 days.",
-                              style: TextStyle(color: Colors.white30),
+                              style: TextStyle(
+                                color: Colors.white30,
+                              ),
                             ),
                           ),
                           trailing: Text(
@@ -229,13 +539,17 @@ class _HomePageState extends State<HomePage>
           ListTile(
             title: Text(
               "Earnings",
-              style: TextStyle(color: Colors.black38),
+              style: TextStyle(
+                color: Colors.black38,
+              ),
             ),
             trailing: InkWell(
               onTap: () {},
               child: Text(
                 "View Details",
-                style: TextStyle(color: Theme.of(context).accentColor),
+                style: TextStyle(
+                  color: Theme.of(context).accentColor,
+                ),
               ),
             ),
           ),
@@ -283,9 +597,10 @@ class _HomePageState extends State<HomePage>
                           subtitle: Text(
                             "US\$36.70",
                             style: TextStyle(
-                                color: Colors.black,
-                                fontSize: 18.0,
-                                fontWeight: FontWeight.normal),
+                              color: Colors.black,
+                              fontSize: 18.0,
+                              fontWeight: FontWeight.normal,
+                            ),
                           ),
                         ),
                       ),
@@ -309,9 +624,10 @@ class _HomePageState extends State<HomePage>
                           subtitle: Text(
                             "US\$17.80",
                             style: TextStyle(
-                                color: Colors.black,
-                                fontSize: 18.0,
-                                fontWeight: FontWeight.normal),
+                              color: Colors.black,
+                              fontSize: 18.0,
+                              fontWeight: FontWeight.normal,
+                            ),
                           ),
                         ),
                       ),
@@ -366,9 +682,10 @@ class _HomePageState extends State<HomePage>
                           subtitle: Text(
                             "US\$26.85",
                             style: TextStyle(
-                                color: Colors.black,
-                                fontSize: 18.0,
-                                fontWeight: FontWeight.normal),
+                              color: Colors.black,
+                              fontSize: 18.0,
+                              fontWeight: FontWeight.normal,
+                            ),
                           ),
                         ),
                       ),
@@ -387,16 +704,18 @@ class _HomePageState extends State<HomePage>
                             text: TextSpan(
                               text: "0",
                               style: TextStyle(
-                                  color: Colors.black,
-                                  fontSize: 18.0,
-                                  fontWeight: FontWeight.normal),
+                                color: Colors.black,
+                                fontSize: 18.0,
+                                fontWeight: FontWeight.normal,
+                              ),
                               children: <TextSpan>[
                                 TextSpan(
                                   text: " (-US\$0)",
                                   style: TextStyle(
-                                      color: Colors.grey,
-                                      fontSize: 18.0,
-                                      fontWeight: FontWeight.normal),
+                                    color: Colors.grey,
+                                    fontSize: 18.0,
+                                    fontWeight: FontWeight.normal,
+                                  ),
                                 ),
                               ],
                             ),
@@ -412,7 +731,9 @@ class _HomePageState extends State<HomePage>
           ListTile(
             title: Text(
               "To-Dos",
-              style: TextStyle(color: Colors.black38),
+              style: TextStyle(
+                color: Colors.black38,
+              ),
             ),
           ),
           Padding(
@@ -424,7 +745,9 @@ class _HomePageState extends State<HomePage>
                   child: ListTile(
                     title: Text(
                       "No Unread Messages",
-                      style: TextStyle(fontWeight: FontWeight.bold),
+                      style: TextStyle(
+                        fontWeight: FontWeight.bold,
+                      ),
                     ),
                     subtitle: Text(
                         "Your response time is great!, keep up the good work"),
@@ -436,11 +759,14 @@ class _HomePageState extends State<HomePage>
                         borderRadius: BorderRadius.all(Radius.circular(20.0)),
                       ),
                       child: Center(
-                          child: Text(
-                        "0",
-                        style: TextStyle(
-                            color: Colors.black38, fontWeight: FontWeight.bold),
-                      )),
+                        child: Text(
+                          "0",
+                          style: TextStyle(
+                            color: Colors.black38,
+                            fontWeight: FontWeight.bold,
+                          ),
+                        ),
+                      ),
                     ),
                   ),
                 )),
