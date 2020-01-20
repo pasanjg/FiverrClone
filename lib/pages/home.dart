@@ -10,9 +10,9 @@ class HomePage extends StatefulWidget {
 
 class _HomePageState extends State<HomePage>
     with SingleTickerProviderStateMixin {
-  double _levelsHeight = 60.0;
   double _requirementsTapMinHeight = 60.0;
-  double _levelsMaxHeight = 400.0;
+  double _levelsHeight = 60.0;
+  double _levelsMaxHeight = 380.0;
   double _defaultFontSize = 16.0;
 
   int _selectedIndexForBottomNavigationBar = 0;
@@ -536,19 +536,22 @@ class _HomePageState extends State<HomePage>
               ],
             ),
           ),
-          ListTile(
-            title: Text(
-              "Earnings",
-              style: TextStyle(
-                color: Colors.black38,
-              ),
-            ),
-            trailing: InkWell(
-              onTap: () {},
-              child: Text(
-                "View Details",
+          Container(
+            height: 50.0,
+            child: ListTile(
+              title: Text(
+                "Earnings",
                 style: TextStyle(
-                  color: Theme.of(context).accentColor,
+                  color: Colors.black38,
+                ),
+              ),
+              trailing: InkWell(
+                onTap: () {},
+                child: Text(
+                  "View Details",
+                  style: TextStyle(
+                    color: Theme.of(context).accentColor,
+                  ),
                 ),
               ),
             ),
@@ -728,48 +731,281 @@ class _HomePageState extends State<HomePage>
               ),
             ),
           ),
-          ListTile(
-            title: Text(
-              "To-Dos",
-              style: TextStyle(
-                color: Colors.black38,
+          Container(
+            height: 40.0,
+            child: ListTile(
+              title: Text(
+                "To-Dos",
+                style: TextStyle(
+                  color: Colors.black38,
+                ),
               ),
             ),
           ),
           Padding(
             padding: const EdgeInsets.only(left: 8.0, right: 8.0),
             child: Card(
-                elevation: 2,
-                child: Padding(
-                  padding: const EdgeInsets.only(top: 8.0, bottom: 8.0),
-                  child: ListTile(
-                    title: Text(
-                      "No Unread Messages",
-                      style: TextStyle(
-                        fontWeight: FontWeight.bold,
-                      ),
+              elevation: 2,
+              child: Padding(
+                padding: const EdgeInsets.only(top: 8.0, bottom: 8.0),
+                child: ListTile(
+                  title: Text(
+                    "No Unread Messages",
+                    style: TextStyle(
+                      fontWeight: FontWeight.bold,
                     ),
-                    subtitle: Text(
-                        "Your response time is great!, keep up the good work"),
-                    trailing: Container(
-                      height: 30.0,
-                      width: 50.0,
-                      decoration: BoxDecoration(
-                        border: Border.all(width: 1.0, color: Colors.black38),
-                        borderRadius: BorderRadius.all(Radius.circular(20.0)),
-                      ),
-                      child: Center(
-                        child: Text(
-                          "0",
-                          style: TextStyle(
-                            color: Colors.black38,
-                            fontWeight: FontWeight.bold,
-                          ),
+                  ),
+                  subtitle: Text(
+                      "Your response time is great!, keep up the good work"),
+                  trailing: Container(
+                    height: 30.0,
+                    width: 50.0,
+                    decoration: BoxDecoration(
+                      border: Border.all(width: 1.0, color: Colors.black38),
+                      borderRadius: BorderRadius.all(Radius.circular(20.0)),
+                    ),
+                    child: Center(
+                      child: Text(
+                        "0",
+                        style: TextStyle(
+                          color: Colors.black38,
+                          fontWeight: FontWeight.bold,
                         ),
                       ),
                     ),
                   ),
-                )),
+                ),
+              ),
+            ),
+          ),
+          Container(
+            height: 40.0,
+            child: ListTile(
+              title: Text(
+                "My Gigs",
+                style: TextStyle(
+                  color: Colors.black38,
+                ),
+              ),
+            ),
+          ),
+          Padding(
+            padding: const EdgeInsets.only(left: 8.0, right: 8.0),
+            child: Card(
+              elevation: 2,
+              child: Container(
+                height: 170,
+                child: Column(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: <Widget>[
+                    Padding(
+                      padding: const EdgeInsets.fromLTRB(8.0, 15.0, 8.0, 8.0),
+                      child: Flex(
+                        direction: Axis.horizontal,
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: <Widget>[
+                          Text(
+                            "Overall statistics",
+                          ),
+                          Text(
+                            "Last 7 days",
+                            style: TextStyle(
+                              color: Colors.grey,
+                            ),
+                          ),
+                        ],
+                      ),
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.fromLTRB(8.0, 0.0, 8.0, 8.0),
+                      child: Flex(
+                        direction: Axis.horizontal,
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: <Widget>[
+                          Text(
+                            "Views",
+                          ),
+                          Container(
+                            alignment: Alignment.centerRight,
+                            width: 100,
+                            child: Row(
+                              mainAxisAlignment: MainAxisAlignment.end,
+                              children: <Widget>[
+                                Text(
+                                  "46",
+                                  style: TextStyle(
+                                    color: Colors.black87,
+                                    fontWeight: FontWeight.bold,
+                                  ),
+                                ),
+                                Padding(
+                                  padding: const EdgeInsets.only(left: 5.0),
+                                  child: Icon(
+                                    Icons.arrow_downward,
+                                    color: Colors.red,
+                                    size: 15,
+                                  ),
+                                ),
+                              ],
+                            ),
+                          ),
+                        ],
+                      ),
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.fromLTRB(8.0, 0.0, 8.0, 8.0),
+                      child: Flex(
+                        direction: Axis.horizontal,
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: <Widget>[
+                          Text(
+                            "Impressions",
+                          ),
+                          Container(
+                            alignment: Alignment.centerRight,
+                            width: 100,
+                            child: Row(
+                              mainAxisAlignment: MainAxisAlignment.end,
+                              children: <Widget>[
+                                Text(
+                                  "574",
+                                  style: TextStyle(
+                                    color: Colors.black87,
+                                    fontWeight: FontWeight.bold,
+                                  ),
+                                ),
+                                Padding(
+                                  padding: const EdgeInsets.only(left: 5.0),
+                                  child: Icon(
+                                    Icons.arrow_downward,
+                                    color: Colors.red,
+                                    size: 15,
+                                  ),
+                                ),
+                              ],
+                            ),
+                          ),
+                        ],
+                      ),
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.fromLTRB(8.0, 0.0, 8.0, 8.0),
+                      child: Flex(
+                        direction: Axis.horizontal,
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: <Widget>[
+                          Text(
+                            "Social Clicks",
+                          ),
+                          Container(
+                            alignment: Alignment.centerRight,
+                            width: 100,
+                            child: Row(
+                              mainAxisAlignment: MainAxisAlignment.end,
+                              children: <Widget>[
+                                Text(
+                                  "2",
+                                  style: TextStyle(
+                                    color: Colors.black87,
+                                    fontWeight: FontWeight.bold,
+                                  ),
+                                ),
+                                Padding(
+                                  padding: const EdgeInsets.only(left: 5.0),
+                                  child: Icon(
+                                    Icons.remove,
+                                    color: Colors.grey,
+                                    size: 15,
+                                  ),
+                                ),
+                              ],
+                            ),
+                          ),
+                        ],
+                      ),
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.fromLTRB(8.0, 0.0, 8.0, 8.0),
+                      child: Flex(
+                        direction: Axis.horizontal,
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: <Widget>[
+                          Text(
+                            "Clicks",
+                          ),
+                          Container(
+                            alignment: Alignment.centerRight,
+                            width: 100,
+                            child: Row(
+                              mainAxisAlignment: MainAxisAlignment.end,
+                              children: <Widget>[
+                                Text(
+                                  "18",
+                                  style: TextStyle(
+                                    color: Colors.black87,
+                                    fontWeight: FontWeight.bold,
+                                  ),
+                                ),
+                                Padding(
+                                  padding: const EdgeInsets.only(left: 5.0),
+                                  child: Icon(
+                                    Icons.arrow_upward,
+                                    color: Theme.of(context).accentColor,
+                                    size: 15,
+                                  ),
+                                ),
+                              ],
+                            ),
+                          ),
+                        ],
+                      ),
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.fromLTRB(8.0, 0.0, 8.0, 15.0),
+                      child: Flex(
+                        direction: Axis.horizontal,
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: <Widget>[
+                          Text(
+                            "Conversion",
+                          ),
+                          Container(
+                            alignment: Alignment.centerRight,
+                            width: 100,
+                            child: Row(
+                              mainAxisAlignment: MainAxisAlignment.end,
+                              children: <Widget>[
+                                Text(
+                                  "0.95%",
+                                  style: TextStyle(
+                                    color: Colors.black87,
+                                    fontWeight: FontWeight.bold,
+                                  ),
+                                ),
+                                Padding(
+                                  padding: const EdgeInsets.only(left: 5.0),
+                                  child: Icon(
+                                    Icons.arrow_upward,
+                                    color: Theme.of(context).accentColor,
+                                    size: 15,
+                                  ),
+                                ),
+                              ],
+                            ),
+                          ),
+                        ],
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+            ),
           ),
         ],
       ),
