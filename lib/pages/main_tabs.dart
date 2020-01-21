@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+
 import 'package:flutter_fiverr_clone/pages/home.dart';
+import 'package:flutter_fiverr_clone/pages/message_inbox.dart';
 
 class MainTabs extends StatefulWidget {
   @override
@@ -32,8 +34,7 @@ class _MainTabsState extends State<MainTabs>
 
   static List<Widget> _listOfIconsForTabBar = <Widget>[
     HomePage(),
-    Text("Home"),
-    Text("Message"),
+    MessageInboxPage(),
     Text("Sales"),
     Text("Notifications"),
     Text("Profile"),
