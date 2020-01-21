@@ -16,7 +16,7 @@ class _MessageInboxPageState extends State<MessageInboxPage> {
   var messages = [
     {
       "image":
-          "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREJzkKuEBSObp1BNlRAhhmyvR8r_O2qMCcUaaFZAplHVKqct7G&s",
+          "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2L-Zfe-iYizglLDH55UD3wXBJre7V98QwKfsBCfR_8YfvXPnN&s",
       "username": "codeman",
       "online": true,
       "receivedOn": "4 days ago",
@@ -25,7 +25,7 @@ class _MessageInboxPageState extends State<MessageInboxPage> {
     },
     {
       "image":
-          "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREJzkKuEBSObp1BNlRAhhmyvR8r_O2qMCcUaaFZAplHVKqct7G&s",
+          "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2L-Zfe-iYizglLDH55UD3wXBJre7V98QwKfsBCfR_8YfvXPnN&s",
       "username": "olivefam",
       "online": true,
       "receivedOn": "4 days ago",
@@ -34,7 +34,7 @@ class _MessageInboxPageState extends State<MessageInboxPage> {
     },
     {
       "image":
-          "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREJzkKuEBSObp1BNlRAhhmyvR8r_O2qMCcUaaFZAplHVKqct7G&s",
+          "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2L-Zfe-iYizglLDH55UD3wXBJre7V98QwKfsBCfR_8YfvXPnN&s",
       "username": "mediaguy",
       "online": false,
       "receivedOn": "4 days ago",
@@ -43,7 +43,7 @@ class _MessageInboxPageState extends State<MessageInboxPage> {
     },
     {
       "image":
-          "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREJzkKuEBSObp1BNlRAhhmyvR8r_O2qMCcUaaFZAplHVKqct7G&s",
+          "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2L-Zfe-iYizglLDH55UD3wXBJre7V98QwKfsBCfR_8YfvXPnN&s",
       "username": "upwardsquad",
       "online": false,
       "receivedOn": "1 week ago",
@@ -52,7 +52,7 @@ class _MessageInboxPageState extends State<MessageInboxPage> {
     },
     {
       "image":
-          "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREJzkKuEBSObp1BNlRAhhmyvR8r_O2qMCcUaaFZAplHVKqct7G&s",
+          "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2L-Zfe-iYizglLDH55UD3wXBJre7V98QwKfsBCfR_8YfvXPnN&s",
       "username": "jacob",
       "online": true,
       "receivedOn": "3 weeks ago",
@@ -61,7 +61,7 @@ class _MessageInboxPageState extends State<MessageInboxPage> {
     },
     {
       "image":
-          "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREJzkKuEBSObp1BNlRAhhmyvR8r_O2qMCcUaaFZAplHVKqct7G&s",
+          "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2L-Zfe-iYizglLDH55UD3wXBJre7V98QwKfsBCfR_8YfvXPnN&s",
       "username": "ninny",
       "online": false,
       "receivedOn": "4 weeks ago",
@@ -70,7 +70,7 @@ class _MessageInboxPageState extends State<MessageInboxPage> {
     },
     {
       "image":
-          "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREJzkKuEBSObp1BNlRAhhmyvR8r_O2qMCcUaaFZAplHVKqct7G&s",
+          "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2L-Zfe-iYizglLDH55UD3wXBJre7V98QwKfsBCfR_8YfvXPnN&s",
       "username": "samnad",
       "online": true,
       "receivedOn": "4 weeks ago",
@@ -79,7 +79,7 @@ class _MessageInboxPageState extends State<MessageInboxPage> {
     },
     {
       "image":
-          "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREJzkKuEBSObp1BNlRAhhmyvR8r_O2qMCcUaaFZAplHVKqct7G&s",
+          "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2L-Zfe-iYizglLDH55UD3wXBJre7V98QwKfsBCfR_8YfvXPnN&s",
       "username": "mikestad",
       "online": false,
       "receivedOn": "1 month ago",
@@ -88,7 +88,7 @@ class _MessageInboxPageState extends State<MessageInboxPage> {
     },
     {
       "image":
-          "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREJzkKuEBSObp1BNlRAhhmyvR8r_O2qMCcUaaFZAplHVKqct7G&s",
+          "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2L-Zfe-iYizglLDH55UD3wXBJre7V98QwKfsBCfR_8YfvXPnN&s",
       "username": "sasha",
       "online": true,
       "receivedOn": "2 months ago",
@@ -106,64 +106,76 @@ class _MessageInboxPageState extends State<MessageInboxPage> {
       child: ListView.builder(
         itemCount: messages.length,
         itemBuilder: (context, int index) {
-          return ListTile(
-            leading: CircleAvatar(
-              radius: 32.0,
-              backgroundImage: NetworkImage(messages[index]['image']),
-            ),
-            title: Row(
-              mainAxisAlignment: MainAxisAlignment.start,
-              children: <Widget>[
-                Text(messages[index]['username']),
-                SizedBox(
-                  width: 5.0,
+          return InkWell(
+            onTap: () {},
+            child: ListTile(
+              leading: InkWell(
+                onTap: (){},
+                splashColor: Colors.transparent,
+                highlightColor: Colors.transparent,
+                child: CircleAvatar(
+                  radius: 30.0,
+                  backgroundImage: NetworkImage(messages[index]['image']),
                 ),
-                messages[index]['online']
-                    ? Text(
-                        "online",
-                        style: TextStyle(
-                          color: Theme.of(context).accentColor,
-                          fontSize: 14.0,
-                        ),
-                      )
-                    : Text(""),
-              ],
-            ),
-            subtitle: Wrap(
-              children: <Widget>[
-                Container(
+              ),
+              title: Row(
+                mainAxisAlignment: MainAxisAlignment.start,
+                children: <Widget>[
+                  Text(messages[index]['username']),
+                  SizedBox(
+                    width: 5.0,
+                  ),
+                  messages[index]['online']
+                      ? Text(
+                          "online",
+                          style: TextStyle(
+                            color: Theme.of(context).accentColor,
+                            fontSize: 14.0,
+                          ),
+                        )
+                      : Text(""),
+                ],
+              ),
+              subtitle: Padding(
+                padding: const EdgeInsets.only(top: 8.0),
+                child: Container(
                   height: 15,
-                  child: Text(
-                    messages[index]['message'],
-                    style: TextStyle(
-                      fontSize: 14,
+                  child: RichText(
+                    overflow: TextOverflow.ellipsis,
+                    strutStyle: StrutStyle(fontSize: 12.0),
+                    text: TextSpan(
+                      text: messages[index]['message'],
+                      style: TextStyle(color: Colors.black),
                     ),
                   ),
                 ),
-              ],
-            ),
-            trailing: Flex(
-              direction: Axis.vertical,
-              mainAxisAlignment: MainAxisAlignment.center,
-              crossAxisAlignment: CrossAxisAlignment.end,
-              children: <Widget>[
-                Text(
-                  messages[index]['receivedOn'],
-                  style: TextStyle(color: Colors.grey, fontSize: 12.0),
-                ),
-                Padding(
-                  padding: const EdgeInsets.only(top: 8.0),
-                  child: InkWell(
-                    onTap: () {},
-                    child: messages[index]['starred']
-                        ? Icon(
-                            Icons.star,
-                            color: Colors.amber,
-                          )
-                        : Icon(Icons.star_border),
+              ),
+              trailing: Flex(
+                direction: Axis.vertical,
+                mainAxisAlignment: MainAxisAlignment.center,
+                crossAxisAlignment: CrossAxisAlignment.end,
+                children: <Widget>[
+                  Text(
+                    messages[index]['receivedOn'],
+                    style: TextStyle(color: Colors.grey, fontSize: 12.0),
                   ),
-                ),
-              ],
+                  InkWell(
+                    onTap: () {},
+                    highlightColor: Colors.transparent,
+                    splashColor: Colors.transparent,
+                    child: Container(
+                      width: 50.0,
+                      height: 40.0,
+                      child: messages[index]['starred']
+                          ? Icon(
+                              Icons.star,
+                              color: Colors.amber,
+                            )
+                          : Icon(Icons.star_border),
+                    ),
+                  ),
+                ],
+              ),
             ),
           );
         },

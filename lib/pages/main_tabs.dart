@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 import 'package:flutter_fiverr_clone/pages/home.dart';
 import 'package:flutter_fiverr_clone/pages/message_inbox.dart';
@@ -22,10 +23,38 @@ class _MainTabsState extends State<MainTabs>
     _selectedIndexForBottomNavigationBar = 0;
     _appBarTitle = "pasanjg";
     _appBarActions = [
-      IconButton(
-        icon: Icon(Icons.person),
-        onPressed: () {},
-      )
+      InkWell(
+        onTap: () {},
+        splashColor: Colors.transparent,
+        highlightColor: Colors.transparent,
+        child: Padding(
+          padding: const EdgeInsets.all(8.0),
+          child: Container(
+            width: 36.0,
+            height: 36.0,
+            child: Stack(
+              alignment: Alignment.bottomRight,
+              children: <Widget>[
+                CircleAvatar(
+                  radius: 18.0,
+                  backgroundImage: NetworkImage(
+                      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2L-Zfe-iYizglLDH55UD3wXBJre7V98QwKfsBCfR_8YfvXPnN&s"),
+                ),
+                Container(
+                  child: CircleAvatar(
+                    radius: 5.0,
+                    backgroundColor: Color(0xFF1DBF73),
+                  ),
+                  decoration: new BoxDecoration(
+                      shape: BoxShape.circle,
+                      color: const Color(0xFFFFFFFF), // border color
+                      border: Border.all(color: Colors.white, width: 2)),
+                ),
+              ],
+            ),
+          ),
+        ),
+      ),
     ];
     controller = TabController(
         vsync: this,
@@ -74,10 +103,39 @@ class _MainTabsState extends State<MainTabs>
       case 0:
         {
           _appBarActions = [
-            IconButton(
-              icon: Icon(Icons.person),
-              onPressed: () {},
-            )
+            InkWell(
+              onTap: () {},
+              splashColor: Colors.transparent,
+              highlightColor: Colors.transparent,
+              child: Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: Container(
+                  width: 36.0,
+                  height: 36.0,
+                  child: Stack(
+                    alignment: Alignment.bottomRight,
+                    children: <Widget>[
+                      CircleAvatar(
+                        radius: 18.0,
+                        backgroundImage: NetworkImage(
+                            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2L-Zfe-iYizglLDH55UD3wXBJre7V98QwKfsBCfR_8YfvXPnN&s"),
+                      ),
+                      Container(
+                        child: CircleAvatar(
+                          radius: 5.0,
+                          backgroundColor: Color(0xFF1DBF73),
+                        ),
+                        decoration: new BoxDecoration(
+                            shape: BoxShape.circle,
+                            color: const Color(0xFFFFFFFF), // border color
+                            border:
+                                Border.all(color: Colors.white, width: 2)),
+                      ),
+                    ],
+                  ),
+                ),
+              ),
+            ),
           ];
         }
         break;
@@ -95,7 +153,7 @@ class _MainTabsState extends State<MainTabs>
         {
           _appBarActions = [
             IconButton(
-              icon: Icon(Icons.help_outline),
+              icon: Icon(FontAwesomeIcons.questionCircle),
               onPressed: () {},
             )
           ];
@@ -111,7 +169,7 @@ class _MainTabsState extends State<MainTabs>
           _appBarActions = [
             IconButton(
               icon: Icon(
-                Icons.settings,
+                FontAwesomeIcons.cog,
                 color: Colors.grey,
               ),
               onPressed: () {},
@@ -155,23 +213,23 @@ class _MainTabsState extends State<MainTabs>
         // this will be set when a new tab is tapped
         items: [
           BottomNavigationBarItem(
-            icon: Icon(Icons.home),
+            icon: Icon(FontAwesomeIcons.home),
             title: Text('Home'),
           ),
           BottomNavigationBarItem(
-            icon: Icon(Icons.mail),
+            icon: Icon(FontAwesomeIcons.envelope),
             title: Text('Messages'),
           ),
           BottomNavigationBarItem(
-            icon: Icon(Icons.assignment),
+            icon: Icon(FontAwesomeIcons.clipboard),
             title: Text('Sales'),
           ),
           BottomNavigationBarItem(
-            icon: Icon(Icons.notifications),
+            icon: Icon(FontAwesomeIcons.bell),
             title: Text('Notifications'),
           ),
           BottomNavigationBarItem(
-            icon: Icon(Icons.person),
+            icon: Icon(FontAwesomeIcons.user),
             title: Text('Profile'),
           ),
         ],

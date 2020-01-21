@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'dart:math';
 
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+
 class HomePage extends StatefulWidget {
   @override
   _HomePageState createState() => _HomePageState();
@@ -66,7 +68,7 @@ class _HomePageState extends State<HomePage>
                         InkWell(
                           onTap: () {},
                           child: Icon(
-                            Icons.help_outline,
+                            FontAwesomeIcons.questionCircle,
                             color: Colors.white,
                           ),
                         ),
@@ -395,8 +397,8 @@ class _HomePageState extends State<HomePage>
                         },
                         animation: rotateAnimation,
                         child: Icon(
-                          Icons.arrow_drop_down,
-                          color: Colors.white,
+                          FontAwesomeIcons.angleDown,
+                          color: Colors.grey,
                         ),
                       ),
                     ),
@@ -829,9 +831,9 @@ class _HomePageState extends State<HomePage>
                                 Padding(
                                   padding: const EdgeInsets.only(left: 5.0),
                                   child: Icon(
-                                    Icons.arrow_downward,
+                                    FontAwesomeIcons.arrowDown,
                                     color: Colors.red,
-                                    size: 15,
+                                    size: 12,
                                   ),
                                 ),
                               ],
@@ -866,9 +868,9 @@ class _HomePageState extends State<HomePage>
                                 Padding(
                                   padding: const EdgeInsets.only(left: 5.0),
                                   child: Icon(
-                                    Icons.arrow_downward,
+                                    FontAwesomeIcons.arrowDown,
                                     color: Colors.red,
-                                    size: 15,
+                                    size: 12,
                                   ),
                                 ),
                               ],
@@ -903,9 +905,9 @@ class _HomePageState extends State<HomePage>
                                 Padding(
                                   padding: const EdgeInsets.only(left: 5.0),
                                   child: Icon(
-                                    Icons.remove,
+                                    FontAwesomeIcons.minus,
                                     color: Colors.grey,
-                                    size: 15,
+                                    size: 12,
                                   ),
                                 ),
                               ],
@@ -940,9 +942,9 @@ class _HomePageState extends State<HomePage>
                                 Padding(
                                   padding: const EdgeInsets.only(left: 5.0),
                                   child: Icon(
-                                    Icons.arrow_upward,
+                                    FontAwesomeIcons.arrowUp,
                                     color: Theme.of(context).accentColor,
-                                    size: 15,
+                                    size: 12,
                                   ),
                                 ),
                               ],
@@ -977,9 +979,9 @@ class _HomePageState extends State<HomePage>
                                 Padding(
                                   padding: const EdgeInsets.only(left: 5.0),
                                   child: Icon(
-                                    Icons.arrow_upward,
+                                    FontAwesomeIcons.arrowUp,
                                     color: Theme.of(context).accentColor,
-                                    size: 15,
+                                    size: 12,
                                   ),
                                 ),
                               ],
