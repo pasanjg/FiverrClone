@@ -11,13 +11,26 @@ class MainTabs extends StatefulWidget {
 class _MainTabsState extends State<MainTabs>
     with SingleTickerProviderStateMixin {
   TabController controller;
-  int _selectedIndexForBottomNavigationBar = 0;
+  int _selectedIndexForBottomNavigationBar;
+
+  String _appBarTitle;
+  List<Widget> _appBarActions;
 
   @override
   void initState() {
     super.initState();
+    _selectedIndexForBottomNavigationBar = 0;
+    _appBarTitle = "pasanjg";
+    _appBarActions = [
+      IconButton(
+        icon: Icon(Icons.person),
+        onPressed: () {},
+      )
+    ];
     controller = TabController(
-        vsync: this, length: _listOfIconsForTabBar.length, initialIndex: 1);
+        vsync: this,
+        length: _listOfPagesForBottomNavigationBar.length,
+        initialIndex: 1);
   }
 
   @override
@@ -26,13 +39,99 @@ class _MainTabsState extends State<MainTabs>
     controller.dispose();
   }
 
+  setAppBarTitle(int index) {
+    switch (_selectedIndexForBottomNavigationBar) {
+      case 0:
+        {
+          _appBarTitle = "pasanjg";
+        }
+        break;
+      case 1:
+        {
+          _appBarTitle = "Inbox";
+        }
+        break;
+      case 2:
+        {
+          _appBarTitle = "Manage Sales";
+        }
+        break;
+      case 3:
+        {
+          _appBarTitle = "Notifications";
+        }
+        break;
+      case 4:
+        {
+          _appBarTitle = "";
+        }
+        break;
+    }
+  }
+
+  List<Widget> setAppBarActions(int index) {
+    switch (_selectedIndexForBottomNavigationBar) {
+      case 0:
+        {
+          _appBarActions = [
+            IconButton(
+              icon: Icon(Icons.person),
+              onPressed: () {},
+            )
+          ];
+        }
+        break;
+      case 1:
+        {
+          _appBarActions = [
+            IconButton(
+              icon: Icon(Icons.filter_list),
+              onPressed: () {},
+            )
+          ];
+        }
+        break;
+      case 2:
+        {
+          _appBarActions = [
+            IconButton(
+              icon: Icon(Icons.help_outline),
+              onPressed: () {},
+            )
+          ];
+        }
+        break;
+      case 3:
+        {
+          _appBarActions = [];
+        }
+        break;
+      case 4:
+        {
+          _appBarActions = [
+            IconButton(
+              icon: Icon(
+                Icons.settings,
+                color: Colors.grey,
+              ),
+              onPressed: () {},
+            )
+          ];
+        }
+        break;
+    }
+    return _appBarActions;
+  }
+
   void _onItemTappedForBottomNavigationBar(int index) {
     setState(() {
       _selectedIndexForBottomNavigationBar = index;
+      setAppBarTitle(index);
+      setAppBarActions(index);
     });
   }
 
-  static List<Widget> _listOfIconsForTabBar = <Widget>[
+  static List<Widget> _listOfPagesForBottomNavigationBar = <Widget>[
     HomePage(),
     MessageInboxPage(),
     Text("Sales"),
@@ -44,17 +143,12 @@ class _MainTabsState extends State<MainTabs>
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("pasanjg"),
+        title: Text(_appBarTitle),
         elevation: 0.5,
-        actions: <Widget>[
-          IconButton(
-            icon: Icon(Icons.person),
-            onPressed: () {},
-          )
-        ],
+        actions: _appBarActions,
       ),
-      body: _listOfIconsForTabBar[_selectedIndexForBottomNavigationBar],
-      // body: Text("ds dfdf gf"),
+      body: _listOfPagesForBottomNavigationBar[
+          _selectedIndexForBottomNavigationBar],
       bottomNavigationBar: BottomNavigationBar(
         type: BottomNavigationBarType.fixed,
         onTap: _onItemTappedForBottomNavigationBar,
