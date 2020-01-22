@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_fiverr_clone/pages/manage_sales.dart';
+import 'package:flutter_fiverr_clone/pages/notifications.dart';
+import 'package:flutter_fiverr_clone/pages/profile.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 import 'package:flutter_fiverr_clone/pages/home.dart';
@@ -14,48 +17,10 @@ class _MainTabsState extends State<MainTabs>
   TabController controller;
   int _selectedIndexForBottomNavigationBar;
 
-  String _appBarTitle;
-  List<Widget> _appBarActions;
-
   @override
   void initState() {
     super.initState();
     _selectedIndexForBottomNavigationBar = 0;
-    _appBarTitle = "pasanjg";
-    _appBarActions = [
-      InkWell(
-        onTap: () {},
-        splashColor: Colors.transparent,
-        highlightColor: Colors.transparent,
-        child: Padding(
-          padding: const EdgeInsets.all(8.0),
-          child: Container(
-            width: 36.0,
-            height: 36.0,
-            child: Stack(
-              alignment: Alignment.bottomRight,
-              children: <Widget>[
-                CircleAvatar(
-                  radius: 18.0,
-                  backgroundImage: NetworkImage(
-                      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2L-Zfe-iYizglLDH55UD3wXBJre7V98QwKfsBCfR_8YfvXPnN&s"),
-                ),
-                Container(
-                  child: CircleAvatar(
-                    radius: 5.0,
-                    backgroundColor: Color(0xFF1DBF73),
-                  ),
-                  decoration: new BoxDecoration(
-                      shape: BoxShape.circle,
-                      color: const Color(0xFFFFFFFF), // border color
-                      border: Border.all(color: Colors.white, width: 2)),
-                ),
-              ],
-            ),
-          ),
-        ),
-      ),
-    ];
     controller = TabController(
         vsync: this,
         length: _listOfPagesForBottomNavigationBar.length,
@@ -68,143 +33,23 @@ class _MainTabsState extends State<MainTabs>
     controller.dispose();
   }
 
-  setAppBarTitle(int index) {
-    switch (_selectedIndexForBottomNavigationBar) {
-      case 0:
-        {
-          _appBarTitle = "pasanjg";
-        }
-        break;
-      case 1:
-        {
-          _appBarTitle = "Inbox";
-        }
-        break;
-      case 2:
-        {
-          _appBarTitle = "Manage Sales";
-        }
-        break;
-      case 3:
-        {
-          _appBarTitle = "Notifications";
-        }
-        break;
-      case 4:
-        {
-          _appBarTitle = "";
-        }
-        break;
-    }
-  }
-
-  List<Widget> setAppBarActions(int index) {
-    switch (_selectedIndexForBottomNavigationBar) {
-      case 0:
-        {
-          _appBarActions = [
-            InkWell(
-              onTap: () {},
-              splashColor: Colors.transparent,
-              highlightColor: Colors.transparent,
-              child: Padding(
-                padding: const EdgeInsets.all(8.0),
-                child: Container(
-                  width: 36.0,
-                  height: 36.0,
-                  child: Stack(
-                    alignment: Alignment.bottomRight,
-                    children: <Widget>[
-                      CircleAvatar(
-                        radius: 18.0,
-                        backgroundImage: NetworkImage(
-                            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2L-Zfe-iYizglLDH55UD3wXBJre7V98QwKfsBCfR_8YfvXPnN&s"),
-                      ),
-                      Container(
-                        child: CircleAvatar(
-                          radius: 5.0,
-                          backgroundColor: Color(0xFF1DBF73),
-                        ),
-                        decoration: new BoxDecoration(
-                            shape: BoxShape.circle,
-                            color: const Color(0xFFFFFFFF), // border color
-                            border:
-                                Border.all(color: Colors.white, width: 2)),
-                      ),
-                    ],
-                  ),
-                ),
-              ),
-            ),
-          ];
-        }
-        break;
-      case 1:
-        {
-          _appBarActions = [
-            IconButton(
-              icon: Icon(Icons.filter_list),
-              onPressed: () {},
-            )
-          ];
-        }
-        break;
-      case 2:
-        {
-          _appBarActions = [
-            IconButton(
-              icon: Icon(FontAwesomeIcons.questionCircle),
-              onPressed: () {},
-            )
-          ];
-        }
-        break;
-      case 3:
-        {
-          _appBarActions = [];
-        }
-        break;
-      case 4:
-        {
-          _appBarActions = [
-            IconButton(
-              icon: Icon(
-                FontAwesomeIcons.cog,
-                color: Colors.grey,
-              ),
-              onPressed: () {},
-            )
-          ];
-        }
-        break;
-    }
-    return _appBarActions;
-  }
-
   void _onItemTappedForBottomNavigationBar(int index) {
     setState(() {
       _selectedIndexForBottomNavigationBar = index;
-      setAppBarTitle(index);
-      setAppBarActions(index);
     });
   }
 
   static List<Widget> _listOfPagesForBottomNavigationBar = <Widget>[
     HomePage(),
     MessageInboxPage(),
-    Text("Sales"),
-    Text("Notifications"),
-    Text("Profile"),
+    ManageSales(),
+    Notifications(),
+    Profile(),
   ];
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text(_appBarTitle),
-        elevation: 0.5,
-        actions: _appBarActions,
-      ),
       body: _listOfPagesForBottomNavigationBar[
           _selectedIndexForBottomNavigationBar],
       bottomNavigationBar: BottomNavigationBar(

@@ -13,7 +13,7 @@ class _MessageInboxPageState extends State<MessageInboxPage> {
 
   Future<void> _refreshMessages() async {}
 
-  var messages = [
+  var _messages = [
     {
       "image":
           "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2L-Zfe-iYizglLDH55UD3wXBJre7V98QwKfsBCfR_8YfvXPnN&s",
@@ -100,85 +100,96 @@ class _MessageInboxPageState extends State<MessageInboxPage> {
 
   @override
   Widget build(BuildContext context) {
-    return RefreshIndicator(
-      color: Colors.black87,
-      onRefresh: _refreshMessages,
-      child: ListView.builder(
-        itemCount: messages.length,
-        itemBuilder: (context, int index) {
-          return InkWell(
-            onTap: () {},
-            child: ListTile(
-              leading: InkWell(
-                onTap: (){},
-                splashColor: Colors.transparent,
-                highlightColor: Colors.transparent,
-                child: CircleAvatar(
-                  radius: 30.0,
-                  backgroundImage: NetworkImage(messages[index]['image']),
-                ),
-              ),
-              title: Row(
-                mainAxisAlignment: MainAxisAlignment.start,
-                children: <Widget>[
-                  Text(messages[index]['username']),
-                  SizedBox(
-                    width: 5.0,
+    return Scaffold(
+      appBar: AppBar(
+        title: Text("Inbox"),
+        actions: <Widget>[
+          IconButton(
+            icon: Icon(Icons.filter_list),
+            onPressed: () {},
+          ),
+        ],
+      ),
+      body: RefreshIndicator(
+        color: Colors.black87,
+        onRefresh: _refreshMessages,
+        child: ListView.builder(
+          itemCount: _messages.length,
+          itemBuilder: (context, int index) {
+            return InkWell(
+              onTap: () {},
+              child: ListTile(
+                leading: InkWell(
+                  onTap: () {},
+                  splashColor: Colors.transparent,
+                  highlightColor: Colors.transparent,
+                  child: CircleAvatar(
+                    radius: 30.0,
+                    backgroundImage: NetworkImage(_messages[index]['image']),
                   ),
-                  messages[index]['online']
-                      ? Text(
-                          "online",
-                          style: TextStyle(
-                            color: Theme.of(context).accentColor,
-                            fontSize: 14.0,
-                          ),
-                        )
-                      : Text(""),
-                ],
-              ),
-              subtitle: Padding(
-                padding: const EdgeInsets.only(top: 8.0),
-                child: Container(
-                  height: 15,
-                  child: RichText(
-                    overflow: TextOverflow.ellipsis,
-                    strutStyle: StrutStyle(fontSize: 12.0),
-                    text: TextSpan(
-                      text: messages[index]['message'],
-                      style: TextStyle(color: Colors.black),
+                ),
+                title: Row(
+                  mainAxisAlignment: MainAxisAlignment.start,
+                  children: <Widget>[
+                    Text(_messages[index]['username']),
+                    SizedBox(
+                      width: 5.0,
+                    ),
+                    _messages[index]['online']
+                        ? Text(
+                            "online",
+                            style: TextStyle(
+                              color: Theme.of(context).accentColor,
+                              fontSize: 14.0,
+                            ),
+                          )
+                        : Text(""),
+                  ],
+                ),
+                subtitle: Padding(
+                  padding: const EdgeInsets.only(top: 8.0),
+                  child: Container(
+                    height: 15,
+                    child: RichText(
+                      overflow: TextOverflow.ellipsis,
+                      strutStyle: StrutStyle(fontSize: 12.0),
+                      text: TextSpan(
+                        text: _messages[index]['message'],
+                        style: TextStyle(color: Colors.black),
+                      ),
                     ),
                   ),
                 ),
-              ),
-              trailing: Flex(
-                direction: Axis.vertical,
-                mainAxisAlignment: MainAxisAlignment.center,
-                crossAxisAlignment: CrossAxisAlignment.end,
-                children: <Widget>[
-                  Text(
-                    messages[index]['receivedOn'],
-                    style: TextStyle(color: Colors.grey, fontSize: 12.0),
-                  ),
-                  InkWell(
-                    onTap: () {},
-                    highlightColor: Colors.transparent,
-                    splashColor: Colors.transparent,
-                    child: Container(
-                      width: 50.0,
-                      height: 40.0,
-                      child: messages[index]['starred']
-                          ? Icon(
-                              Icons.star,
-                              color: Colors.amber,
-                            )
-                          : Icon(Icons.star_border),
+                trailing: Flex(
+                  direction: Axis.vertical,
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  crossAxisAlignment: CrossAxisAlignment.end,
+                  children: <Widget>[
+                    Text(
+                      _messages[index]['receivedOn'],
+                      style: TextStyle(color: Colors.grey, fontSize: 12.0),
                     ),
-                  ),
-                ],
+                    InkWell(
+                      onTap: () {},
+                      highlightColor: Colors.transparent,
+                      splashColor: Colors.transparent,
+                      child: Container(
+                        width: 50.0,
+                        height: 40.0,
+                        child: _messages[index]['starred']
+                            ? Icon(
+                                Icons.star,
+                                color: Colors.amber,
+                              )
+                            : Icon(Icons.star_border),
+                      ),
+                    ),
+                  ],
+                ),
               ),
-            ),
-          );
-        },
+            );
+          },
+        ),
       ),
     );
   }
