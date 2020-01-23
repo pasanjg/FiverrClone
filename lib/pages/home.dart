@@ -65,9 +65,10 @@ class _HomePageState extends State<HomePage>
                         backgroundColor: Color(0xFF1DBF73),
                       ),
                       decoration: new BoxDecoration(
-                          shape: BoxShape.circle,
-                          color: const Color(0xFFFFFFFF), // border color
-                          border: Border.all(color: Colors.white, width: 2)),
+                        shape: BoxShape.circle,
+                        color: const Color(0xFFFFFFFF), // border color
+                        border: Border.all(color: Colors.white, width: 2),
+                      ),
                     ),
                   ],
                 ),
@@ -789,7 +790,9 @@ class _HomePageState extends State<HomePage>
                       width: 50.0,
                       decoration: BoxDecoration(
                         border: Border.all(width: 1.0, color: Colors.black38),
-                        borderRadius: BorderRadius.all(Radius.circular(20.0)),
+                        borderRadius: BorderRadius.all(
+                          Radius.circular(20.0),
+                        ),
                       ),
                       child: Center(
                         child: Text(

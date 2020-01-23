@@ -96,6 +96,36 @@ class _MessageInboxPageState extends State<MessageInboxPage> {
           "Lorem Ipsum is a lorem ipsum Lorem Ipsum is a lorem ipsum Lorem Ipsum is a lorem ipsum Lorem Ipsum is a lorem ipsum Lorem Ipsum is a lorem ipsum",
       "starred": false
     },
+    {
+      "image":
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2L-Zfe-iYizglLDH55UD3wXBJre7V98QwKfsBCfR_8YfvXPnN&s",
+      "username": "nisha",
+      "online": false,
+      "receivedOn": "2 months ago",
+      "message":
+      "Lorem Ipsum is a lorem ipsum Lorem Ipsum is a lorem ipsum Lorem Ipsum is a lorem ipsum Lorem Ipsum is a lorem ipsum Lorem Ipsum is a lorem ipsum",
+      "starred": false
+    },
+    {
+      "image":
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2L-Zfe-iYizglLDH55UD3wXBJre7V98QwKfsBCfR_8YfvXPnN&s",
+      "username": "belledum",
+      "online": false,
+      "receivedOn": "2 months ago",
+      "message":
+      "Lorem Ipsum is a lorem ipsum Lorem Ipsum is a lorem ipsum Lorem Ipsum is a lorem ipsum Lorem Ipsum is a lorem ipsum Lorem Ipsum is a lorem ipsum",
+      "starred": false
+    },
+    {
+      "image":
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2L-Zfe-iYizglLDH55UD3wXBJre7V98QwKfsBCfR_8YfvXPnN&s",
+      "username": "dumble",
+      "online": false,
+      "receivedOn": "2 months ago",
+      "message":
+      "Lorem Ipsum is a lorem ipsum Lorem Ipsum is a lorem ipsum Lorem Ipsum is a lorem ipsum Lorem Ipsum is a lorem ipsum Lorem Ipsum is a lorem ipsum",
+      "starred": false
+    },
   ];
 
   @override
