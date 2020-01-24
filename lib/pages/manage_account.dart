@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_fiverr_clone/pages/settings.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 class ManageAccount extends StatefulWidget {
@@ -20,7 +21,12 @@ class _ManageAccountState extends State<ManageAccount> {
               FontAwesomeIcons.cog,
               color: Colors.grey,
             ),
-            onPressed: () {},
+            onPressed: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => SettingsPage()),
+              );
+            },
           ),
         ],
       ),
