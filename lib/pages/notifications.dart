@@ -122,20 +122,17 @@ class _NotificationsState extends State<Notifications> {
                 highlightColor: Colors.transparent,
                 child: Container(
                   color: _notifications[index]['hasRead']
-                      ? Colors.white12
-                      : Colors.white,
+                      ? Colors.white
+                      : Colors.white12,
                   child: Padding(
                     padding: const EdgeInsets.only(
                         left: 8.0, right: 8.0, bottom: 8.0),
                     child: ListTile(
-                      leading: Icon(
-                        _iconMapping[_notifications[index]['icon']],
-                        size: 25.0,
-                        color: _notifications[index]['hasRead']
-                            ? Colors.grey
-                            : Colors.black87
-//                            : Theme.of(context).accentColor,
-                      ),
+                      leading: Icon(_iconMapping[_notifications[index]['icon']],
+                          size: 25.0,
+                          color: _notifications[index]['hasRead']
+                              ? Colors.grey
+                              : Theme.of(context).accentColor),
                       title: Text(
                         _notifications[index]['notification'],
                         style: TextStyle(
@@ -143,6 +140,9 @@ class _NotificationsState extends State<Notifications> {
                               ? Colors.grey
                               : Colors.black87,
                           fontSize: 16.0,
+                          fontWeight: _notifications[index]['hasRead']
+                              ? FontWeight.normal
+                              : FontWeight.bold,
                         ),
                       ),
                     ),
