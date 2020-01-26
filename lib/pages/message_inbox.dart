@@ -98,32 +98,32 @@ class _MessageInboxPageState extends State<MessageInboxPage> {
     },
     {
       "image":
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2L-Zfe-iYizglLDH55UD3wXBJre7V98QwKfsBCfR_8YfvXPnN&s",
+          "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2L-Zfe-iYizglLDH55UD3wXBJre7V98QwKfsBCfR_8YfvXPnN&s",
       "username": "nisha",
       "online": false,
       "receivedOn": "2 months ago",
       "message":
-      "Lorem Ipsum is a lorem ipsum Lorem Ipsum is a lorem ipsum Lorem Ipsum is a lorem ipsum Lorem Ipsum is a lorem ipsum Lorem Ipsum is a lorem ipsum",
+          "Lorem Ipsum is a lorem ipsum Lorem Ipsum is a lorem ipsum Lorem Ipsum is a lorem ipsum Lorem Ipsum is a lorem ipsum Lorem Ipsum is a lorem ipsum",
       "starred": false
     },
     {
       "image":
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2L-Zfe-iYizglLDH55UD3wXBJre7V98QwKfsBCfR_8YfvXPnN&s",
+          "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2L-Zfe-iYizglLDH55UD3wXBJre7V98QwKfsBCfR_8YfvXPnN&s",
       "username": "belledum",
       "online": false,
       "receivedOn": "2 months ago",
       "message":
-      "Lorem Ipsum is a lorem ipsum Lorem Ipsum is a lorem ipsum Lorem Ipsum is a lorem ipsum Lorem Ipsum is a lorem ipsum Lorem Ipsum is a lorem ipsum",
+          "Lorem Ipsum is a lorem ipsum Lorem Ipsum is a lorem ipsum Lorem Ipsum is a lorem ipsum Lorem Ipsum is a lorem ipsum Lorem Ipsum is a lorem ipsum",
       "starred": false
     },
     {
       "image":
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2L-Zfe-iYizglLDH55UD3wXBJre7V98QwKfsBCfR_8YfvXPnN&s",
+          "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2L-Zfe-iYizglLDH55UD3wXBJre7V98QwKfsBCfR_8YfvXPnN&s",
       "username": "dumble",
       "online": false,
       "receivedOn": "2 months ago",
       "message":
-      "Lorem Ipsum is a lorem ipsum Lorem Ipsum is a lorem ipsum Lorem Ipsum is a lorem ipsum Lorem Ipsum is a lorem ipsum Lorem Ipsum is a lorem ipsum",
+          "Lorem Ipsum is a lorem ipsum Lorem Ipsum is a lorem ipsum Lorem Ipsum is a lorem ipsum Lorem Ipsum is a lorem ipsum Lorem Ipsum is a lorem ipsum",
       "starred": false
     },
   ];
@@ -136,7 +136,15 @@ class _MessageInboxPageState extends State<MessageInboxPage> {
         actions: <Widget>[
           IconButton(
             icon: Icon(Icons.filter_list),
-            onPressed: () {},
+            onPressed: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  fullscreenDialog: true,
+                  builder: (context) => MessageFilter(),
+                ),
+              );
+            },
           ),
         ],
       ),
@@ -219,6 +227,199 @@ class _MessageInboxPageState extends State<MessageInboxPage> {
               ),
             );
           },
+        ),
+      ),
+    );
+  }
+}
+
+class MessageFilter extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Text("Select label"),
+      ),
+      body: Container(
+        child: Column(
+          children: <Widget>[
+            InkWell(
+              onTap: () {},
+              child: Padding(
+                padding: EdgeInsets.only(left: 20.0, top: 20.0, bottom: 10.0),
+                child: Container(
+                  width: MediaQuery.of(context).size.width,
+                  child: Text(
+                    "FILTERS",
+                    style: TextStyle(
+                      fontSize: 12.0,
+                      color: Colors.grey,
+                    ),
+                  ),
+                ),
+              ),
+            ),
+            InkWell(
+              onTap: () {},
+              child: Padding(
+                padding: EdgeInsets.only(left: 20.0, top: 15.0, bottom: 10.0),
+                child: Container(
+                  width: MediaQuery.of(context).size.width,
+                  child: Text(
+                    "All",
+                    style: TextStyle(
+                      fontSize: 16.0,
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
+                ),
+              ),
+            ),
+            InkWell(
+              onTap: () {},
+              child: Padding(
+                padding: EdgeInsets.only(left: 20.0, top: 15.0, bottom: 10.0),
+                child: Container(
+                  width: MediaQuery.of(context).size.width,
+                  child: Text(
+                    "Unread",
+                    style: TextStyle(
+                      fontSize: 16.0,
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
+                ),
+              ),
+            ),
+            InkWell(
+              onTap: () {},
+              child: Padding(
+                padding: EdgeInsets.only(left: 20.0, top: 15.0, bottom: 10.0),
+                child: Container(
+                  width: MediaQuery.of(context).size.width,
+                  child: Text(
+                    "Starred",
+                    style: TextStyle(
+                      fontSize: 16.0,
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
+                ),
+              ),
+            ),
+            InkWell(
+              onTap: () {},
+              child: Padding(
+                padding: EdgeInsets.only(left: 20.0, top: 15.0, bottom: 10.0),
+                child: Container(
+                  width: MediaQuery.of(context).size.width,
+                  child: Text(
+                    "Archived",
+                    style: TextStyle(
+                      fontSize: 16.0,
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
+                ),
+              ),
+            ),
+            InkWell(
+              onTap: () {},
+              child: Padding(
+                padding: EdgeInsets.only(left: 20.0, top: 15.0, bottom: 10.0),
+                child: Container(
+                  width: MediaQuery.of(context).size.width,
+                  child: Text(
+                    "Spam",
+                    style: TextStyle(
+                      fontSize: 16.0,
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
+                ),
+              ),
+            ),
+            InkWell(
+              onTap: () {},
+              child: Padding(
+                padding: EdgeInsets.only(left: 20.0, top: 15.0, bottom: 10.0),
+                child: Container(
+                  width: MediaQuery.of(context).size.width,
+                  child: Text(
+                    "Sent",
+                    style: TextStyle(
+                      fontSize: 16.0,
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
+                ),
+              ),
+            ),
+            InkWell(
+              onTap: () {},
+              child: Padding(
+                padding: EdgeInsets.only(left: 20.0, top: 15.0, bottom: 10.0),
+                child: Container(
+                  width: MediaQuery.of(context).size.width,
+                  child: Text(
+                    "Custom Offers",
+                    style: TextStyle(
+                      fontSize: 16.0,
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
+                ),
+              ),
+            ),
+            InkWell(
+              onTap: () {},
+              child: Padding(
+                padding: EdgeInsets.only(left: 20.0, top: 15.0, bottom: 10.0),
+                child: Container(
+                  width: MediaQuery.of(context).size.width,
+                  child: Text(
+                    "LABELS",
+                    style: TextStyle(
+                      fontSize: 12.0,
+                      color: Colors.grey,
+                    ),
+                  ),
+                ),
+              ),
+            ),
+            InkWell(
+              onTap: () {},
+              child: Padding(
+                padding: EdgeInsets.only(left: 20.0, top: 15.0, bottom: 10.0),
+                child: Container(
+                  width: MediaQuery.of(context).size.width,
+                  child: Text(
+                    "Follow-up",
+                    style: TextStyle(
+                      fontSize: 16.0,
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
+                ),
+              ),
+            ),
+            InkWell(
+              onTap: () {},
+              child: Padding(
+                padding: EdgeInsets.only(left: 20.0, top: 15.0, bottom: 10.0),
+                child: Container(
+                  width: MediaQuery.of(context).size.width,
+                  child: Text(
+                    "Nudge",
+                    style: TextStyle(
+                      fontSize: 16.0,
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
+                ),
+              ),
+            ),
+          ],
         ),
       ),
     );
