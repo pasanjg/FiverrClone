@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_fiverr_clone/pages/profile_about.dart';
-import 'package:flutter_fiverr_clone/pages/profile_gigs.dart';
-import 'package:flutter_fiverr_clone/pages/profile_reviews.dart';
+import 'package:flutter_fiverr_clone/pages/profile/profile_about.dart';
+import 'package:flutter_fiverr_clone/pages/profile/profile_gigs.dart';
+import 'package:flutter_fiverr_clone/pages/profile/profile_reviews.dart';
 
 class ProfilePage extends StatelessWidget {
   @override
