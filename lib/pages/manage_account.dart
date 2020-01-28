@@ -56,7 +56,7 @@ class _ManageAccountState extends State<ManageAccount> {
                                 CircleAvatar(
                                   radius: 30.0,
                                   backgroundImage: NetworkImage(
-                                      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2L-Zfe-iYizglLDH55UD3wXBJre7V98QwKfsBCfR_8YfvXPnN&s"),
+                                      "https://fiverr-res.cloudinary.com/t_profile_original,q_auto,f_auto/attachments/profile/photo/6909232ef04489c9085671872acfd83e-1545655648866/de3ec62b-84f1-42f2-a5fe-aac7b14dd249.png"),
                                 ),
                                 Container(
                                   child: CircleAvatar(

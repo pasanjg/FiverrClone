@@ -57,7 +57,7 @@ class _HomePageState extends State<HomePage>
                     CircleAvatar(
                       radius: 18.0,
                       backgroundImage: NetworkImage(
-                          "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2L-Zfe-iYizglLDH55UD3wXBJre7V98QwKfsBCfR_8YfvXPnN&s"),
+                          "https://fiverr-res.cloudinary.com/t_profile_original,q_auto,f_auto/attachments/profile/photo/6909232ef04489c9085671872acfd83e-1545655648866/de3ec62b-84f1-42f2-a5fe-aac7b14dd249.png"),
                     ),
                     Container(
                       child: CircleAvatar(
@@ -773,77 +773,77 @@ class _HomePageState extends State<HomePage>
             Padding(
               padding: const EdgeInsets.only(left: 8.0, right: 8.0),
               child: Card(
-                elevation: 2,
-                child: Column(
-                  children: <Widget>[
-                    Padding(
-                      padding: const EdgeInsets.only(top: 8.0, bottom: 8.0),
-                      child: ListTile(
-                        title: Text(
-                          "No Unread Messages",
-                          style: TextStyle(
-                            fontWeight: FontWeight.bold,
-                          ),
-                        ),
-                        subtitle: Text(
-                            "Your response time is great!, keep up the good work"),
-                        trailing: Container(
-                          height: 30.0,
-                          width: 50.0,
-                          decoration: BoxDecoration(
-                            border: Border.all(width: 1.0, color: Colors.black38),
-                            borderRadius: BorderRadius.all(
-                              Radius.circular(20.0),
+                  elevation: 2,
+                  child: Column(
+                    children: <Widget>[
+                      Padding(
+                        padding: const EdgeInsets.only(top: 8.0, bottom: 8.0),
+                        child: ListTile(
+                          title: Text(
+                            "No Unread Messages",
+                            style: TextStyle(
+                              fontWeight: FontWeight.bold,
                             ),
                           ),
-                          child: Center(
-                            child: Text(
-                              "0",
-                              style: TextStyle(
-                                color: Colors.black38,
-                                fontWeight: FontWeight.bold,
+                          subtitle: Text(
+                              "Your response time is great!, keep up the good work"),
+                          trailing: Container(
+                            height: 30.0,
+                            width: 50.0,
+                            decoration: BoxDecoration(
+                              border:
+                                  Border.all(width: 1.0, color: Colors.black38),
+                              borderRadius: BorderRadius.all(
+                                Radius.circular(20.0),
+                              ),
+                            ),
+                            child: Center(
+                              child: Text(
+                                "0",
+                                style: TextStyle(
+                                  color: Colors.black38,
+                                  fontWeight: FontWeight.bold,
+                                ),
                               ),
                             ),
                           ),
                         ),
                       ),
-                    ),
-                    Divider(),
-                    Padding(
-                      padding: const EdgeInsets.only(top: 0.0, bottom: 8.0),
-                      child: ListTile(
-                        title: Text(
-                          "New Order",
-                          style: TextStyle(
-                            fontWeight: FontWeight.bold,
-                          ),
-                        ),
-                        subtitle: Text(
-                            "Start working and get things going!"),
-                        trailing: Container(
-                          height: 30.0,
-                          width: 50.0,
-                          decoration: BoxDecoration(
-                            border: Border.all(width: 1.0, color: Colors.black38),
-                            borderRadius: BorderRadius.all(
-                              Radius.circular(20.0),
+                      Divider(),
+                      Padding(
+                        padding: const EdgeInsets.only(top: 0.0, bottom: 8.0),
+                        child: ListTile(
+                          title: Text(
+                            "New Order",
+                            style: TextStyle(
+                              fontWeight: FontWeight.bold,
                             ),
                           ),
-                          child: Center(
-                            child: Text(
-                              "1",
-                              style: TextStyle(
-                                color: Colors.black38,
-                                fontWeight: FontWeight.bold,
+                          subtitle: Text("Start working and get things going!"),
+                          trailing: Container(
+                            height: 30.0,
+                            width: 50.0,
+                            decoration: BoxDecoration(
+                              border:
+                                  Border.all(width: 1.0, color: Colors.black38),
+                              borderRadius: BorderRadius.all(
+                                Radius.circular(20.0),
+                              ),
+                            ),
+                            child: Center(
+                              child: Text(
+                                "1",
+                                style: TextStyle(
+                                  color: Colors.black38,
+                                  fontWeight: FontWeight.bold,
+                                ),
                               ),
                             ),
                           ),
                         ),
                       ),
-                    ),
-                  ],
-                )
-              ),
+                    ],
+                  )),
             ),
             Container(
               height: 40.0,
