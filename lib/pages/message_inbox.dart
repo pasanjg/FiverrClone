@@ -243,18 +243,15 @@ class MessageFilter extends StatelessWidget {
       body: Container(
         child: Column(
           children: <Widget>[
-            InkWell(
-              onTap: () {},
-              child: Padding(
-                padding: EdgeInsets.only(left: 20.0, top: 20.0, bottom: 10.0),
-                child: Container(
-                  width: MediaQuery.of(context).size.width,
-                  child: Text(
-                    "FILTERS",
-                    style: TextStyle(
-                      fontSize: 12.0,
-                      color: Colors.grey,
-                    ),
+            Padding(
+              padding: EdgeInsets.only(left: 20.0, top: 20.0, bottom: 10.0),
+              child: Container(
+                width: MediaQuery.of(context).size.width,
+                child: Text(
+                  "FILTERS",
+                  style: TextStyle(
+                    fontSize: 12.0,
+                    color: Colors.grey,
                   ),
                 ),
               ),
@@ -371,18 +368,15 @@ class MessageFilter extends StatelessWidget {
                 ),
               ),
             ),
-            InkWell(
-              onTap: () {},
-              child: Padding(
-                padding: EdgeInsets.only(left: 20.0, top: 15.0, bottom: 10.0),
-                child: Container(
-                  width: MediaQuery.of(context).size.width,
-                  child: Text(
-                    "LABELS",
-                    style: TextStyle(
-                      fontSize: 12.0,
-                      color: Colors.grey,
-                    ),
+            Padding(
+              padding: EdgeInsets.only(left: 20.0, top: 15.0, bottom: 10.0),
+              child: Container(
+                width: MediaQuery.of(context).size.width,
+                child: Text(
+                  "LABELS",
+                  style: TextStyle(
+                    fontSize: 12.0,
+                    color: Colors.grey,
                   ),
                 ),
               ),

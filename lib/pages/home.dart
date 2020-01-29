@@ -522,54 +522,48 @@ class _HomePageState extends State<HomePage>
                           ),
                         ),
                         Divider(),
-                        Padding(
-                          padding: const EdgeInsets.only(top: 0.0),
-                          child: ListTile(
-                            title: Text(
-                              "Orders",
-                              style: TextStyle(
-                                  color: Colors.white,
-                                  fontSize: _defaultFontSize),
+                        ListTile(
+                          title: Text(
+                            "Orders",
+                            style: TextStyle(
+                                color: Colors.white,
+                                fontSize: _defaultFontSize),
+                          ),
+                          subtitle: Padding(
+                            padding: const EdgeInsets.only(top: 5.0),
+                            child: Text(
+                              "Receive and complete at least 50\norders (all time).",
+                              style: TextStyle(color: Colors.white30),
                             ),
-                            subtitle: Padding(
-                              padding: const EdgeInsets.only(top: 5.0),
-                              child: Text(
-                                "Receive and complete at least 50\norders (all time).",
-                                style: TextStyle(color: Colors.white30),
-                              ),
-                            ),
-                            trailing: Text(
-                              "50 / 50",
-                              style: TextStyle(
-                                color: Theme.of(context).accentColor,
-                                fontSize: _defaultFontSize,
-                              ),
+                          ),
+                          trailing: Text(
+                            "50 / 50",
+                            style: TextStyle(
+                              color: Theme.of(context).accentColor,
+                              fontSize: _defaultFontSize,
                             ),
                           ),
                         ),
                         Divider(),
-                        Padding(
-                          padding: const EdgeInsets.only(top: 0.0),
-                          child: ListTile(
-                            title: Text(
-                              "Earnings",
-                              style: TextStyle(
-                                  color: Colors.white,
-                                  fontSize: _defaultFontSize),
+                        ListTile(
+                          title: Text(
+                            "Earnings",
+                            style: TextStyle(
+                                color: Colors.white,
+                                fontSize: _defaultFontSize),
+                          ),
+                          subtitle: Padding(
+                            padding: const EdgeInsets.only(top: 5.0),
+                            child: Text(
+                              "Earn at least \$2000 from completed orders (all time).",
+                              style: TextStyle(color: Colors.white30),
                             ),
-                            subtitle: Padding(
-                              padding: const EdgeInsets.only(top: 5.0),
-                              child: Text(
-                                "Earn at least \$2000 from completed orders (all time).",
-                                style: TextStyle(color: Colors.white30),
-                              ),
-                            ),
-                            trailing: Text(
-                              "\$1,405 / \$2,000",
-                              style: TextStyle(
-                                color: Colors.white30,
-                                fontSize: _defaultFontSize,
-                              ),
+                          ),
+                          trailing: Text(
+                            "\$1,405 / \$2,000",
+                            style: TextStyle(
+                              color: Colors.white30,
+                              fontSize: _defaultFontSize,
                             ),
                           ),
                         ),
@@ -633,170 +627,185 @@ class _HomePageState extends State<HomePage>
                 elevation: 2,
                 child: Column(
                   children: <Widget>[
-                    Flex(
-                      mainAxisAlignment: MainAxisAlignment.start,
-                      direction: Axis.horizontal,
-                      children: <Widget>[
-                        Expanded(
-                          flex: 1,
-                          child: ListTile(
-                            dense: true,
-                            contentPadding: EdgeInsets.only(left: 10.0),
-                            title: Text(
-                              "Personal balance",
-                              style: TextStyle(
-                                fontSize: 14.0,
-                              ),
-                            ),
-                            subtitle: Text(
-                              "US\$65.90",
-                              style: TextStyle(
-                                  color: Theme.of(context).accentColor,
-                                  fontSize: 18.0,
-                                  fontWeight: FontWeight.bold),
-                            ),
-                          ),
-                        ),
-                        Expanded(
-                          flex: 1,
-                          child: ListTile(
-                            dense: true,
-                            contentPadding: EdgeInsets.only(left: 10.0),
-                            title: Text(
-                              "Earning in January",
-                              style: TextStyle(
-                                fontSize: 14.0,
-                              ),
-                            ),
-                            subtitle: Text(
-                              "US\$36.70",
-                              style: TextStyle(
-                                color: Colors.black,
-                                fontSize: 18.0,
-                                fontWeight: FontWeight.normal,
-                              ),
-                            ),
-                          ),
-                        ),
-                      ],
-                    ),
-                    Flex(
-                      mainAxisAlignment: MainAxisAlignment.start,
-                      direction: Axis.horizontal,
-                      children: <Widget>[
-                        Expanded(
-                          flex: 1,
-                          child: ListTile(
-                            dense: true,
-                            contentPadding: EdgeInsets.only(left: 10.0),
-                            title: Text(
-                              "Avg. selling price",
-                              style: TextStyle(
-                                fontSize: 14.0,
-                              ),
-                            ),
-                            subtitle: Text(
-                              "US\$17.80",
-                              style: TextStyle(
-                                color: Colors.black,
-                                fontSize: 18.0,
-                                fontWeight: FontWeight.normal,
-                              ),
-                            ),
-                          ),
-                        ),
-                        Expanded(
-                          flex: 1,
-                          child: ListTile(
-                            dense: true,
-                            contentPadding: EdgeInsets.only(left: 10.0),
-                            title: Text(
-                              "Active orders",
-                              style: TextStyle(
-                                fontSize: 14.0,
-                              ),
-                            ),
-                            subtitle: RichText(
-                              text: TextSpan(
-                                text: "1",
+                    Container(
+                      height: 50.0,
+                      child: Flex(
+                        mainAxisAlignment: MainAxisAlignment.start,
+                        direction: Axis.horizontal,
+                        children: <Widget>[
+                          Expanded(
+                            flex: 1,
+                            child: ListTile(
+                              dense: true,
+                              contentPadding: EdgeInsets.only(left: 10.0),
+                              title: Text(
+                                "Personal balance",
                                 style: TextStyle(
-                                    color: Colors.black,
+                                  color: Colors.black87,
+                                  fontSize: 14.0,
+                                ),
+                              ),
+                              subtitle: Text(
+                                "US\$65.90",
+                                style: TextStyle(
+                                    color: Theme.of(context).accentColor,
                                     fontSize: 18.0,
-                                    fontWeight: FontWeight.normal),
-                                children: <TextSpan>[
-                                  TextSpan(
-                                    text: " (US\$20)",
-                                    style: TextStyle(
-                                        color: Colors.grey,
-                                        fontSize: 18.0,
-                                        fontWeight: FontWeight.normal),
-                                  ),
-                                ],
+                                    fontWeight: FontWeight.bold),
                               ),
                             ),
                           ),
-                        ),
-                      ],
-                    ),
-                    Flex(
-                      mainAxisAlignment: MainAxisAlignment.start,
-                      direction: Axis.horizontal,
-                      children: <Widget>[
-                        Expanded(
-                          flex: 1,
-                          child: ListTile(
-                            dense: true,
-                            contentPadding: EdgeInsets.only(left: 10.0),
-                            title: Text(
-                              "Pending clearance",
-                              style: TextStyle(
-                                fontSize: 14.0,
+                          Expanded(
+                            flex: 1,
+                            child: ListTile(
+                              dense: true,
+                              contentPadding: EdgeInsets.only(left: 10.0),
+                              title: Text(
+                                "Earning in January",
+                                style: TextStyle(
+                                  color: Colors.black87,
+                                  fontSize: 14.0,
+                                ),
                               ),
-                            ),
-                            subtitle: Text(
-                              "US\$26.85",
-                              style: TextStyle(
-                                color: Colors.black,
-                                fontSize: 18.0,
-                                fontWeight: FontWeight.normal,
-                              ),
-                            ),
-                          ),
-                        ),
-                        Expanded(
-                          flex: 1,
-                          child: ListTile(
-                            dense: true,
-                            contentPadding: EdgeInsets.only(left: 10.0),
-                            title: Text(
-                              "Cancelled orders",
-                              style: TextStyle(
-                                fontSize: 14.0,
-                              ),
-                            ),
-                            subtitle: RichText(
-                              text: TextSpan(
-                                text: "0",
+                              subtitle: Text(
+                                "US\$36.70",
                                 style: TextStyle(
                                   color: Colors.black,
                                   fontSize: 18.0,
                                   fontWeight: FontWeight.normal,
                                 ),
-                                children: <TextSpan>[
-                                  TextSpan(
-                                    text: " (-US\$0)",
-                                    style: TextStyle(
-                                      color: Colors.grey,
-                                      fontSize: 18.0,
-                                      fontWeight: FontWeight.normal,
-                                    ),
-                                  ),
-                                ],
                               ),
                             ),
                           ),
-                        ),
-                      ],
+                        ],
+                      ),
+                    ),
+                    Container(
+                      height: 50.0,
+                      child: Flex(
+                        mainAxisAlignment: MainAxisAlignment.start,
+                        direction: Axis.horizontal,
+                        children: <Widget>[
+                          Expanded(
+                            flex: 1,
+                            child: ListTile(
+                              dense: true,
+                              contentPadding: EdgeInsets.only(left: 10.0),
+                              title: Text(
+                                "Avg. selling price",
+                                style: TextStyle(
+                                  color: Colors.black87,
+                                  fontSize: 14.0,
+                                ),
+                              ),
+                              subtitle: Text(
+                                "US\$17.80",
+                                style: TextStyle(
+                                  color: Colors.black,
+                                  fontSize: 18.0,
+                                  fontWeight: FontWeight.normal,
+                                ),
+                              ),
+                            ),
+                          ),
+                          Expanded(
+                            flex: 1,
+                            child: ListTile(
+                              dense: true,
+                              contentPadding: EdgeInsets.only(left: 10.0),
+                              title: Text(
+                                "Active orders",
+                                style: TextStyle(
+                                  color: Colors.black87,
+                                  fontSize: 14.0,
+                                ),
+                              ),
+                              subtitle: RichText(
+                                text: TextSpan(
+                                  text: "1",
+                                  style: TextStyle(
+                                      color: Colors.black,
+                                      fontSize: 18.0,
+                                      fontWeight: FontWeight.normal),
+                                  children: <TextSpan>[
+                                    TextSpan(
+                                      text: " (US\$20)",
+                                      style: TextStyle(
+                                          color: Colors.grey,
+                                          fontSize: 18.0,
+                                          fontWeight: FontWeight.normal),
+                                    ),
+                                  ],
+                                ),
+                              ),
+                            ),
+                          ),
+                        ],
+                      ),
+                    ),
+                    Container(
+                      height: 70.0,
+                      child: Flex(
+                        mainAxisAlignment: MainAxisAlignment.start,
+                        direction: Axis.horizontal,
+                        children: <Widget>[
+                          Expanded(
+                            flex: 1,
+                            child: ListTile(
+                              dense: true,
+                              contentPadding: EdgeInsets.only(left: 10.0),
+                              title: Text(
+                                "Pending clearance",
+                                style: TextStyle(
+                                  color: Colors.black87,
+                                  fontSize: 14.0,
+                                ),
+                              ),
+                              subtitle: Text(
+                                "US\$26.85",
+                                style: TextStyle(
+                                  color: Colors.black,
+                                  fontSize: 18.0,
+                                  fontWeight: FontWeight.normal,
+                                ),
+                              ),
+                            ),
+                          ),
+                          Expanded(
+                            flex: 1,
+                            child: ListTile(
+                              dense: true,
+                              contentPadding: EdgeInsets.only(left: 10.0),
+                              title: Text(
+                                "Cancelled orders",
+                                style: TextStyle(
+                                  color: Colors.black87,
+                                  fontSize: 14.0,
+                                ),
+                              ),
+                              subtitle: RichText(
+                                text: TextSpan(
+                                  text: "0",
+                                  style: TextStyle(
+                                    color: Colors.black,
+                                    fontSize: 18.0,
+                                    fontWeight: FontWeight.normal,
+                                  ),
+                                  children: <TextSpan>[
+                                    TextSpan(
+                                      text: " (-US\$0)",
+                                      style: TextStyle(
+                                        color: Colors.grey,
+                                        fontSize: 18.0,
+                                        fontWeight: FontWeight.normal,
+                                      ),
+                                    ),
+                                  ],
+                                ),
+                              ),
+                            ),
+                          ),
+                        ],
+                      ),
                     ),
                   ],
                 ),
