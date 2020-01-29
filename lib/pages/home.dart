@@ -3,6 +3,7 @@ import 'package:flutter_fiverr_clone/pages/profile/profile.dart';
 import 'dart:math';
 
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:flutter_circular_chart/flutter_circular_chart.dart';
 
 class HomePage extends StatefulWidget {
   @override
@@ -17,6 +18,16 @@ class _HomePageState extends State<HomePage>
   double _defaultFontSize = 16.0;
 
   AnimationController _controller;
+
+  final GlobalKey<AnimatedCircularChartState> _chartKeyResponse =
+      new GlobalKey<AnimatedCircularChartState>();
+  final GlobalKey<AnimatedCircularChartState> _chartKeyOrders =
+      new GlobalKey<AnimatedCircularChartState>();
+  final GlobalKey<AnimatedCircularChartState> _chartKeyDelivery =
+      new GlobalKey<AnimatedCircularChartState>();
+  final GlobalKey<AnimatedCircularChartState> _chartKeyRating =
+      new GlobalKey<AnimatedCircularChartState>();
+  final _chartSize = const Size(85.0, 85.0);
 
   @override
   void initState() {
@@ -60,7 +71,8 @@ class _HomePageState extends State<HomePage>
                   children: <Widget>[
                     CircleAvatar(
                       radius: 14.0,
-                      backgroundImage: AssetImage("assets/images/fiverr_logo.png"),
+                      backgroundImage:
+                          AssetImage("assets/images/fiverr_logo.png"),
                     ),
                     Container(
                       child: CircleAvatar(
@@ -191,7 +203,7 @@ class _HomePageState extends State<HomePage>
                     ),
                     Padding(
                       padding: const EdgeInsets.only(
-                          top: 30.0, bottom: 20.0, left: 8.0, right: 8.0),
+                          top: 20.0, left: 8.0, right: 8.0),
                       child: Flex(
                         direction: Axis.horizontal,
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -211,35 +223,42 @@ class _HomePageState extends State<HomePage>
                                 decoration: BoxDecoration(
                                   color: Colors.white,
                                 ),
-                                child: Container(
-                                  height: 70.0,
-                                  width: 70.0,
-                                  alignment: Alignment.center,
-                                  child: Text(
-                                    "100%",
-                                    style: TextStyle(
-                                      color: Colors.white,
-                                      fontSize: 20.0,
-                                      fontWeight: FontWeight.bold,
+                                child: AnimatedCircularChart(
+                                  key: _chartKeyResponse,
+                                  size: _chartSize,
+                                  initialChartData: <CircularStackEntry>[
+                                    new CircularStackEntry(
+                                      <CircularSegmentEntry>[
+                                        new CircularSegmentEntry(
+                                          100.0,
+                                          Theme.of(context).accentColor,
+                                          rankKey: 'completed',
+                                        ),
+                                        new CircularSegmentEntry(
+                                          100.0,
+                                          Colors.white12,
+                                          rankKey: 'remaining',
+                                        ),
+                                      ],
+                                      rankKey: 'progress',
                                     ),
-                                  ),
-                                  decoration: BoxDecoration(
-                                    border: Border.all(
-                                        width: 3,
-                                        color: Theme.of(context).accentColor),
-                                    shape: BoxShape.circle,
+                                  ],
+                                  chartType: CircularChartType.Radial,
+                                  percentageValues: true,
+                                  holeLabel: "100%",
+                                  labelStyle: new TextStyle(
+                                    color: Colors.white,
+                                    fontWeight: FontWeight.bold,
+                                    fontSize: 20.0,
                                   ),
                                 ),
                               ),
-                              Padding(
-                                padding: const EdgeInsets.only(top: 8.0),
-                                child: Text(
-                                  "Response\nrate",
-                                  style: TextStyle(
-                                    color: Colors.white,
-                                  ),
-                                  textAlign: TextAlign.center,
+                              Text(
+                                "Response\nrate",
+                                style: TextStyle(
+                                  color: Colors.white,
                                 ),
+                                textAlign: TextAlign.center,
                               ),
                             ],
                           ),
@@ -257,35 +276,42 @@ class _HomePageState extends State<HomePage>
                                 decoration: BoxDecoration(
                                   color: Colors.white,
                                 ),
-                                child: Container(
-                                  height: 70.0,
-                                  width: 70.0,
-                                  alignment: Alignment.center,
-                                  child: Text(
-                                    "100%",
-                                    style: TextStyle(
-                                      color: Colors.white,
-                                      fontSize: 20.0,
-                                      fontWeight: FontWeight.bold,
+                                child: AnimatedCircularChart(
+                                  key: _chartKeyOrders,
+                                  size: _chartSize,
+                                  initialChartData: <CircularStackEntry>[
+                                    new CircularStackEntry(
+                                      <CircularSegmentEntry>[
+                                        new CircularSegmentEntry(
+                                          100.0,
+                                          Theme.of(context).accentColor,
+                                          rankKey: 'completed',
+                                        ),
+                                        new CircularSegmentEntry(
+                                          100.0,
+                                          Colors.white12,
+                                          rankKey: 'remaining',
+                                        ),
+                                      ],
+                                      rankKey: 'progress',
                                     ),
-                                  ),
-                                  decoration: BoxDecoration(
-                                    border: Border.all(
-                                        width: 3,
-                                        color: Theme.of(context).accentColor),
-                                    shape: BoxShape.circle,
+                                  ],
+                                  chartType: CircularChartType.Radial,
+                                  percentageValues: true,
+                                  holeLabel: "100%",
+                                  labelStyle: new TextStyle(
+                                    color: Colors.white,
+                                    fontWeight: FontWeight.bold,
+                                    fontSize: 20.0,
                                   ),
                                 ),
                               ),
-                              Padding(
-                                padding: const EdgeInsets.only(top: 8.0),
-                                child: Text(
-                                  "Order\ncompletion",
-                                  style: TextStyle(
-                                    color: Colors.white,
-                                  ),
-                                  textAlign: TextAlign.center,
+                              Text(
+                                "Order\ncompletion",
+                                style: TextStyle(
+                                  color: Colors.white,
                                 ),
+                                textAlign: TextAlign.center,
                               ),
                             ],
                           ),
@@ -303,35 +329,42 @@ class _HomePageState extends State<HomePage>
                                 decoration: BoxDecoration(
                                   color: Colors.white,
                                 ),
-                                child: Container(
-                                  height: 70.0,
-                                  width: 70.0,
-                                  alignment: Alignment.center,
-                                  child: Text(
-                                    "100%",
-                                    style: TextStyle(
-                                      color: Colors.white,
-                                      fontSize: 20.0,
-                                      fontWeight: FontWeight.bold,
+                                child: AnimatedCircularChart(
+                                  key: _chartKeyDelivery,
+                                  size: _chartSize,
+                                  initialChartData: <CircularStackEntry>[
+                                    new CircularStackEntry(
+                                      <CircularSegmentEntry>[
+                                        new CircularSegmentEntry(
+                                          100.0,
+                                          Theme.of(context).accentColor,
+                                          rankKey: 'completed',
+                                        ),
+                                        new CircularSegmentEntry(
+                                          100.0,
+                                          Colors.white12,
+                                          rankKey: 'remaining',
+                                        ),
+                                      ],
+                                      rankKey: 'progress',
                                     ),
-                                  ),
-                                  decoration: BoxDecoration(
-                                    border: Border.all(
-                                        width: 3,
-                                        color: Theme.of(context).accentColor),
-                                    shape: BoxShape.circle,
+                                  ],
+                                  chartType: CircularChartType.Radial,
+                                  percentageValues: true,
+                                  holeLabel: "100%",
+                                  labelStyle: new TextStyle(
+                                    color: Colors.white,
+                                    fontWeight: FontWeight.bold,
+                                    fontSize: 20.0,
                                   ),
                                 ),
                               ),
-                              Padding(
-                                padding: const EdgeInsets.only(top: 8.0),
-                                child: Text(
-                                  "On-time\ndelivery",
-                                  style: TextStyle(
-                                    color: Colors.white,
-                                  ),
-                                  textAlign: TextAlign.center,
+                              Text(
+                                "On-time\ndelivery",
+                                style: TextStyle(
+                                  color: Colors.white,
                                 ),
+                                textAlign: TextAlign.center,
                               ),
                             ],
                           ),
@@ -349,35 +382,42 @@ class _HomePageState extends State<HomePage>
                                 decoration: BoxDecoration(
                                   color: Colors.white,
                                 ),
-                                child: Container(
-                                  height: 70.0,
-                                  width: 70.0,
-                                  alignment: Alignment.center,
-                                  child: Text(
-                                    "5.0",
-                                    style: TextStyle(
-                                      color: Colors.white,
-                                      fontSize: 20.0,
-                                      fontWeight: FontWeight.bold,
+                                child: AnimatedCircularChart(
+                                  key: _chartKeyRating,
+                                  size: _chartSize,
+                                  initialChartData: <CircularStackEntry>[
+                                    new CircularStackEntry(
+                                      <CircularSegmentEntry>[
+                                        new CircularSegmentEntry(
+                                          (5.0 / 5.0) * 100,
+                                          Theme.of(context).accentColor,
+                                          rankKey: 'completed',
+                                        ),
+                                        new CircularSegmentEntry(
+                                          100.0,
+                                          Colors.white12,
+                                          rankKey: 'remaining',
+                                        ),
+                                      ],
+                                      rankKey: 'progress',
                                     ),
-                                  ),
-                                  decoration: BoxDecoration(
-                                    border: Border.all(
-                                        width: 3,
-                                        color: Theme.of(context).accentColor),
-                                    shape: BoxShape.circle,
+                                  ],
+                                  chartType: CircularChartType.Radial,
+                                  percentageValues: true,
+                                  holeLabel: "5.0",
+                                  labelStyle: new TextStyle(
+                                    color: Colors.white,
+                                    fontWeight: FontWeight.bold,
+                                    fontSize: 20.0,
                                   ),
                                 ),
                               ),
-                              Padding(
-                                padding: const EdgeInsets.only(top: 8.0),
-                                child: Text(
-                                  "Positive\nrating",
-                                  style: TextStyle(
-                                    color: Colors.white,
-                                  ),
-                                  textAlign: TextAlign.center,
+                              Text(
+                                "Positive\nrating",
+                                style: TextStyle(
+                                  color: Colors.white,
                                 ),
+                                textAlign: TextAlign.center,
                               ),
                             ],
                           ),
