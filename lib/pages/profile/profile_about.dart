@@ -14,11 +14,10 @@ class _AboutPageState extends State<AboutPage> {
         ListTile(
           leading: CircleAvatar(
             radius: 15.0,
-            backgroundImage: NetworkImage(
-                "https://fiverr-res.cloudinary.com/t_profile_original,q_auto,f_auto/attachments/profile/photo/6909232ef04489c9085671872acfd83e-1545655648866/de3ec62b-84f1-42f2-a5fe-aac7b14dd249.png"),
+            backgroundImage: AssetImage("assets/images/fiverr_logo.png"),
           ),
           title: Text(
-            "pasanjg",
+            "bruce",
             style: TextStyle(
               fontWeight: FontWeight.bold,
               fontSize: 14.0,

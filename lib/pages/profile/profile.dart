@@ -11,7 +11,7 @@ class ProfilePage extends StatelessWidget {
       initialIndex: 0,
       child: Scaffold(
         appBar: AppBar(
-          title: Text("pasanjg"),
+          title: Text("bruce"),
           bottom: TabBar(
             labelColor: Theme.of(context).accentColor,
             unselectedLabelColor: Colors.grey,
