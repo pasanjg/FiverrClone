@@ -38,7 +38,7 @@ class _ManageAccountState extends State<ManageAccount> {
               Column(
                 children: <Widget>[
                   Container(
-                    color: Colors.black87,
+                    color: Color(0xFF313131),
                     height: 200.0,
                     width: MediaQuery.of(context).size.width,
                     child: Padding(

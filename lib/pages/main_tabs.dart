@@ -81,7 +81,7 @@ class _MainTabsState extends State<MainTabs>
         ],
         currentIndex: _selectedIndexForBottomNavigationBar,
         selectedItemColor: Theme.of(context).accentColor,
-        unselectedItemColor: Colors.black87,
+        unselectedItemColor: Color(0xFF404040),
         showSelectedLabels: false,
         showUnselectedLabels: false,
       ),

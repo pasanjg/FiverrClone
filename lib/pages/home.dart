@@ -59,12 +59,12 @@ class _HomePageState extends State<HomePage>
                   alignment: Alignment.bottomRight,
                   children: <Widget>[
                     CircleAvatar(
-                      radius: 18.0,
+                      radius: 14.0,
                       backgroundImage: AssetImage("assets/images/fiverr_logo.png"),
                     ),
                     Container(
                       child: CircleAvatar(
-                        radius: 5.0,
+                        radius: 4.0,
                         backgroundColor: Color(0xFF1DBF73),
                       ),
                       decoration: new BoxDecoration(
@@ -87,7 +87,7 @@ class _HomePageState extends State<HomePage>
           children: <Widget>[
             Container(
               height: 300.0,
-              color: Colors.black87,
+              color: Color(0xFF313131),
               child: Padding(
                 padding: const EdgeInsets.all(8.0),
                 child: Column(
@@ -393,7 +393,7 @@ class _HomePageState extends State<HomePage>
               duration: Duration(milliseconds: 500),
               height: this._levelsHeight,
               decoration: BoxDecoration(
-                color: Colors.black87,
+                color: Color(0xFF313131),
               ),
               child: Wrap(
                 children: <Widget>[
