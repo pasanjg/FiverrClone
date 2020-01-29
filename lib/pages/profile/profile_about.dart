@@ -171,13 +171,12 @@ class _AboutPageState extends State<AboutPage> {
           title: Text(
             "English",
             style: TextStyle(
-              color: Colors.grey,
+              fontWeight: FontWeight.bold,
             ),
           ),
           subtitle: Text(
             "Fluent",
             style: TextStyle(
-              fontWeight: FontWeight.bold,
               color: Colors.black,
             ),
           ),
@@ -187,13 +186,12 @@ class _AboutPageState extends State<AboutPage> {
           title: Text(
             "Sinhala, Sinhalese",
             style: TextStyle(
-              color: Colors.grey,
+              fontWeight: FontWeight.bold,
             ),
           ),
           subtitle: Text(
             "Native/Bilingual",
             style: TextStyle(
-              fontWeight: FontWeight.bold,
               color: Colors.black,
             ),
           ),
