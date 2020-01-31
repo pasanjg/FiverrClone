@@ -18,8 +18,10 @@ class FiverrClone extends StatelessWidget {
     ]);
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      theme:
-          ThemeData(primaryColor: Colors.white, accentColor: Color(0xFF1DBF73)),
+      theme: ThemeData(
+        primaryColor: Colors.white,
+        accentColor: Color(0xFF1DBF73),
+      ),
       home: MainTabs(),
     );
   }

@@ -55,7 +55,8 @@ class _ManageAccountState extends State<ManageAccount> {
                               children: <Widget>[
                                 CircleAvatar(
                                   radius: 30.0,
-                                  backgroundImage: AssetImage("assets/images/fiverr_logo.png"),
+                                  backgroundImage: AssetImage(
+                                      "assets/images/fiverr_logo.png"),
                                 ),
                                 Container(
                                   child: CircleAvatar(

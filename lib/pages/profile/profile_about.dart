@@ -231,7 +231,7 @@ class _AboutPageState extends State<AboutPage> {
               Padding(
                 padding: const EdgeInsets.only(right: 8.0),
                 child: InkWell(
-                  onTap: (){},
+                  onTap: () {},
                   child: Container(
                     height: 35.0,
                     decoration: BoxDecoration(
@@ -255,7 +255,7 @@ class _AboutPageState extends State<AboutPage> {
               Padding(
                 padding: const EdgeInsets.only(right: 8.0),
                 child: InkWell(
-                  onTap: (){},
+                  onTap: () {},
                   child: Container(
                     height: 35.0,
                     decoration: BoxDecoration(

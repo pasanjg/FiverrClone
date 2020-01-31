@@ -107,7 +107,8 @@ class _HomePageState extends State<HomePage>
                     child: Column(
                       children: <Widget>[
                         Padding(
-                          padding: const EdgeInsets.only(top: 25.0, bottom: 16.0),
+                          padding:
+                              const EdgeInsets.only(top: 25.0, bottom: 16.0),
                           child: Flex(
                             direction: Axis.horizontal,
                             mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -207,8 +208,8 @@ class _HomePageState extends State<HomePage>
                     ),
                   ),
                   Padding(
-                    padding: const EdgeInsets.only(
-                        top: 25.0, left: 8.0, right: 8.0),
+                    padding:
+                        const EdgeInsets.only(top: 25.0, left: 8.0, right: 8.0),
                     child: Flex(
                       direction: Axis.horizontal,
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,

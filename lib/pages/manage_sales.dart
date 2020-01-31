@@ -123,7 +123,7 @@ class _ManageSalesState extends State<ManageSales> {
                     child: Padding(
                       padding: const EdgeInsets.only(top: 8.0, bottom: 8.0),
                       child: InkWell(
-                        onTap: (){},
+                        onTap: () {},
                         splashColor: Colors.transparent,
                         highlightColor: Colors.transparent,
                         child: ListTile(
@@ -145,7 +145,8 @@ class _ManageSalesState extends State<ManageSales> {
                                 ),
                                 decoration: new BoxDecoration(
                                   shape: BoxShape.circle,
-                                  color: const Color(0xFFFFFFFF), // border color
+                                  color: const Color(0xFFFFFFFF),
+                                  // border color
                                   border:
                                       Border.all(color: Colors.white, width: 2),
                                 ),
@@ -174,8 +175,8 @@ class _ManageSalesState extends State<ManageSales> {
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: <Widget>[
                               Padding(
-                                padding:
-                                    const EdgeInsets.only(top: 8.0, bottom: 8.0),
+                                padding: const EdgeInsets.only(
+                                    top: 8.0, bottom: 8.0),
                                 child: Container(
                                   height: 40.0,
                                   child: Text(
@@ -188,7 +189,8 @@ class _ManageSalesState extends State<ManageSales> {
                                 ),
                               ),
                               Row(
-                                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                mainAxisAlignment:
+                                    MainAxisAlignment.spaceBetween,
                                 children: <Widget>[
                                   Container(
                                     child: Container(
@@ -241,7 +243,7 @@ class _ManageSalesState extends State<ManageSales> {
                     child: Padding(
                       padding: const EdgeInsets.only(top: 8.0, bottom: 8.0),
                       child: InkWell(
-                        onTap: (){},
+                        onTap: () {},
                         splashColor: Colors.transparent,
                         highlightColor: Colors.transparent,
                         child: ListTile(
@@ -260,7 +262,8 @@ class _ManageSalesState extends State<ManageSales> {
                                 ),
                                 decoration: new BoxDecoration(
                                   shape: BoxShape.circle,
-                                  color: const Color(0xFFFFFFFF), // border color
+                                  color: const Color(0xFFFFFFFF),
+                                  // border color
                                   border:
                                       Border.all(color: Colors.white, width: 2),
                                 ),
@@ -289,8 +292,8 @@ class _ManageSalesState extends State<ManageSales> {
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: <Widget>[
                               Padding(
-                                padding:
-                                    const EdgeInsets.only(top: 8.0, bottom: 8.0),
+                                padding: const EdgeInsets.only(
+                                    top: 8.0, bottom: 8.0),
                                 child: Container(
                                   height: 40.0,
                                   child: Text(
@@ -303,7 +306,8 @@ class _ManageSalesState extends State<ManageSales> {
                                 ),
                               ),
                               Row(
-                                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                mainAxisAlignment:
+                                    MainAxisAlignment.spaceBetween,
                                 children: <Widget>[
                                   Container(
                                     child: Container(

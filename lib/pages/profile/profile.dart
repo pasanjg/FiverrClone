@@ -29,11 +29,7 @@ class ProfilePage extends StatelessWidget {
           ),
         ),
         body: TabBarView(
-          children: <Widget>[
-            AboutPage(),
-            GigsPage(),
-            ReviewsPage()
-          ],
+          children: <Widget>[AboutPage(), GigsPage(), ReviewsPage()],
         ),
       ),
     );
