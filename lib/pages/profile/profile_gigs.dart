@@ -5,11 +5,62 @@ class GigsPage extends StatefulWidget {
   _GigsPageState createState() => _GigsPageState();
 }
 
+var gigs = [
+  {
+    "image": "https://semantic-ui.com/images/wireframe/image.png",
+    "title": "Create an amazing flutter app",
+    "ratings": 5.0,
+    "reviewCount": 15,
+    "price": "\$30",
+    "isFavourite": true
+  },
+  {
+    "image": "https://semantic-ui.com/images/wireframe/image.png",
+    "title": "Create a simple logo animation in 24 hours",
+    "ratings": 5.0,
+    "reviewCount": 11,
+    "price": "\$5",
+    "isFavourite": false
+  },
+  {
+    "image": "https://semantic-ui.com/images/wireframe/image.png",
+    "title": "Create an amazing glitch promo video",
+    "ratings": 5.0,
+    "reviewCount": 10,
+    "price": "\$15",
+    "isFavourite": true
+  },
+  {
+    "image": "https://semantic-ui.com/images/wireframe/image.png",
+    "title": "Create an amazing mobile app promotion video",
+    "ratings": 5.0,
+    "reviewCount": 20,
+    "price": "\$20",
+    "isFavourite": false
+  },
+  {
+    "image": "https://semantic-ui.com/images/wireframe/image.png",
+    "title": "Create a simple logo animation in 24 hours",
+    "ratings": 5.0,
+    "reviewCount": 15,
+    "price": "\$5",
+    "isFavourite": false
+  },
+  {
+    "image": "https://semantic-ui.com/images/wireframe/image.png",
+    "title": "Create a glitch logo opener",
+    "ratings": 5.0,
+    "reviewCount": 15,
+    "price": "\$5",
+    "isFavourite": true
+  },
+];
+
 class _GigsPageState extends State<GigsPage> {
   @override
   Widget build(BuildContext context) {
     return ListView.builder(
-      itemCount: 5,
+      itemCount: gigs.length,
       itemBuilder: (context, int index) {
         return Padding(
           padding: const EdgeInsets.only(left: 5.0, top: 5.0, right: 5.0),
@@ -26,7 +77,8 @@ class _GigsPageState extends State<GigsPage> {
                         color: Colors.grey,
                         image: DecorationImage(
                           image: NetworkImage(
-                              "https://semantic-ui.com/images/wireframe/image.png"),
+                            gigs[index]['image'],
+                          ),
                           fit: BoxFit.cover,
                         ),
                       ),
@@ -64,7 +116,7 @@ class _GigsPageState extends State<GigsPage> {
                                           padding:
                                               const EdgeInsets.only(left: 4.0),
                                           child: Text(
-                                            "4.9",
+                                            gigs[index]['ratings'].toString(),
                                             style: TextStyle(
                                               color: Colors.amber,
                                             ),
@@ -74,7 +126,7 @@ class _GigsPageState extends State<GigsPage> {
                                           padding:
                                               const EdgeInsets.only(left: 4.0),
                                           child: Text(
-                                            "(15)",
+                                            "(${gigs[index]['reviewCount']})",
                                             style: TextStyle(
                                               color: Colors.grey,
                                             ),
@@ -88,12 +140,15 @@ class _GigsPageState extends State<GigsPage> {
                                     Container(
                                       width: MediaQuery.of(context).size.width *
                                           0.35,
-                                      child:
-                                          Text("Create a glitch logo opener"),
+                                      child: Text(
+                                        gigs[index]['title'],
+                                      ),
                                     ),
                                   ],
                                 ),
-                                Icon(Icons.favorite_border)
+                                gigs[index]['isFavourite']
+                                    ? Icon(Icons.favorite, color: Colors.red)
+                                    : Icon(Icons.favorite_border)
                               ],
                             ),
                             Row(
@@ -106,7 +161,7 @@ class _GigsPageState extends State<GigsPage> {
                                   ),
                                 ),
                                 Text(
-                                  "US\$5",
+                                  gigs[index]['price'],
                                   style: TextStyle(
                                     color: Theme.of(context).accentColor,
                                     fontWeight: FontWeight.bold,
