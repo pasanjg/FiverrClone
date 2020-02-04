@@ -246,18 +246,15 @@ class _SettingsPageState extends State<SettingsPage> {
               ),
             ),
           ),
-          InkWell(
-            onTap: () {},
-            child: Container(
-              alignment: Alignment.center,
-              height: 60.0,
-              width: MediaQuery.of(context).size.width,
-              child: Text(
-                "Version 3.0.5",
-                style: TextStyle(
-                  color: Colors.grey,
-                  fontSize: 15.0,
-                ),
+          Container(
+            alignment: Alignment.center,
+            height: 60.0,
+            width: MediaQuery.of(context).size.width,
+            child: Text(
+              "Version 3.0.5",
+              style: TextStyle(
+                color: Colors.grey,
+                fontSize: 15.0,
               ),
             ),
           ),

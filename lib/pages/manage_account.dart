@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_fiverr_clone/pages/profile/profile.dart';
 import 'package:flutter_fiverr_clone/pages/settings.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
@@ -224,7 +225,10 @@ class _ManageAccountState extends State<ManageAccount> {
                   ),
                 ),
                 InkWell(
-                  onTap: () {},
+                  onTap: () {
+                    Navigator.push(context,
+                        MaterialPageRoute(builder: (context) => ProfilePage()));
+                  },
                   child: ListTile(
                     leading: Icon(FontAwesomeIcons.user),
                     title: Text(
