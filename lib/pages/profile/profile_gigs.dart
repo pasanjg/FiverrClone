@@ -5,58 +5,63 @@ class GigsPage extends StatefulWidget {
   _GigsPageState createState() => _GigsPageState();
 }
 
-var gigs = [
-  {
-    "image": "https://semantic-ui.com/images/wireframe/image.png",
-    "title": "Create an amazing flutter app",
-    "ratings": 5.0,
-    "reviewCount": 15,
-    "price": "\$30",
-    "isFavourite": true
-  },
-  {
-    "image": "https://semantic-ui.com/images/wireframe/image.png",
-    "title": "Create a simple logo animation in 24 hours",
-    "ratings": 5.0,
-    "reviewCount": 11,
-    "price": "\$5",
-    "isFavourite": false
-  },
-  {
-    "image": "https://semantic-ui.com/images/wireframe/image.png",
-    "title": "Create an amazing glitch promo video",
-    "ratings": 5.0,
-    "reviewCount": 10,
-    "price": "\$15",
-    "isFavourite": true
-  },
-  {
-    "image": "https://semantic-ui.com/images/wireframe/image.png",
-    "title": "Create an amazing mobile app promotion video",
-    "ratings": 5.0,
-    "reviewCount": 20,
-    "price": "\$20",
-    "isFavourite": false
-  },
-  {
-    "image": "https://semantic-ui.com/images/wireframe/image.png",
-    "title": "Create a simple logo animation in 24 hours",
-    "ratings": 5.0,
-    "reviewCount": 15,
-    "price": "\$5",
-    "isFavourite": false
-  },
-  {
-    "image": "https://semantic-ui.com/images/wireframe/image.png",
-    "title": "Create a glitch logo opener",
-    "ratings": 5.0,
-    "reviewCount": 15,
-    "price": "\$5",
-    "isFavourite": true
-  },
-];
-
 class _GigsPageState extends State<GigsPage> {
+  @override
+  void initState() {
+    super.initState();
+  }
+
+  var gigs = [
+    {
+      "image": "https://semantic-ui.com/images/wireframe/image.png",
+      "title": "Create an amazing flutter app",
+      "ratings": 5.0,
+      "reviewCount": 15,
+      "price": "\$30",
+      "isFavourite": true
+    },
+    {
+      "image": "https://semantic-ui.com/images/wireframe/image.png",
+      "title": "Create a simple logo animation in 24 hours",
+      "ratings": 5.0,
+      "reviewCount": 11,
+      "price": "\$5",
+      "isFavourite": false
+    },
+    {
+      "image": "https://semantic-ui.com/images/wireframe/image.png",
+      "title": "Create an amazing glitch promo video",
+      "ratings": 5.0,
+      "reviewCount": 10,
+      "price": "\$15",
+      "isFavourite": true
+    },
+    {
+      "image": "https://semantic-ui.com/images/wireframe/image.png",
+      "title": "Create an amazing mobile app promotion video",
+      "ratings": 5.0,
+      "reviewCount": 20,
+      "price": "\$20",
+      "isFavourite": false
+    },
+    {
+      "image": "https://semantic-ui.com/images/wireframe/image.png",
+      "title": "Create a simple logo animation in 24 hours",
+      "ratings": 5.0,
+      "reviewCount": 15,
+      "price": "\$5",
+      "isFavourite": false
+    },
+    {
+      "image": "https://semantic-ui.com/images/wireframe/image.png",
+      "title": "Create a glitch logo opener",
+      "ratings": 5.0,
+      "reviewCount": 15,
+      "price": "\$5",
+      "isFavourite": true
+    },
+  ];
+
   @override
   Widget build(BuildContext context) {
     return ListView.builder(
