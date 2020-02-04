@@ -41,7 +41,7 @@ class _ManageSalesState extends State<ManageSales> {
       "online": true,
       "image":
           "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2L-Zfe-iYizglLDH55UD3wXBJre7V98QwKfsBCfR_8YfvXPnN&s",
-      "gigTitle": "Create an flutter app",
+      "gigTitle": "Create an amazing flutter app",
       "date": "12 Jan 2020",
       "price": "US\$150"
     },
