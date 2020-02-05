@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_fiverr_clone/pages/earnings.dart';
 import 'package:flutter_fiverr_clone/pages/profile/profile.dart';
 import 'dart:math';
 
@@ -616,7 +617,16 @@ class _HomePageState extends State<HomePage>
                   ),
                 ),
                 trailing: InkWell(
-                  onTap: () {},
+                  onTap: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => EarningsPage(),
+                      ),
+                    );
+                  },
+                  highlightColor: Colors.transparent,
+                  splashColor: Colors.transparent,
                   child: Text(
                     "View Details",
                     style: TextStyle(
