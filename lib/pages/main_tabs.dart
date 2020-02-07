@@ -5,7 +5,8 @@ import 'package:flutter_fiverr_clone/pages/message_inbox.dart';
 import 'package:flutter_fiverr_clone/pages/manage_sales.dart';
 import 'package:flutter_fiverr_clone/pages/notifications.dart';
 import 'package:flutter_fiverr_clone/pages/manage_account.dart';
-import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+
+import 'package:flutter_icons/flutter_icons.dart';
 
 class MainTabs extends StatefulWidget {
   @override
@@ -58,23 +59,23 @@ class _MainTabsState extends State<MainTabs>
         // this will be set when a new tab is tapped
         items: [
           BottomNavigationBarItem(
-            icon: Icon(FontAwesomeIcons.home),
+            icon: Icon(Feather.home),
             title: Text('Home'),
           ),
           BottomNavigationBarItem(
-            icon: Icon(FontAwesomeIcons.envelope),
+            icon: Icon(Feather.mail),
             title: Text('Messages'),
           ),
           BottomNavigationBarItem(
-            icon: Icon(FontAwesomeIcons.clipboard),
+            icon: Icon(Feather.clipboard),
             title: Text('Sales'),
           ),
           BottomNavigationBarItem(
-            icon: Icon(FontAwesomeIcons.bell),
+            icon: Icon(Feather.bell),
             title: Text('Notifications'),
           ),
           BottomNavigationBarItem(
-            icon: Icon(FontAwesomeIcons.user),
+            icon: Icon(Feather.user),
             title: Text('Profile'),
           ),
         ],
