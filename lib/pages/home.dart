@@ -1100,7 +1100,7 @@ class _HomePageState extends State<HomePage>
                         ),
                       ),
                       Padding(
-                        padding: const EdgeInsets.fromLTRB(8.0, 0.0, 8.0, 15.0),
+                        padding: const EdgeInsets.fromLTRB(8.0, 0.0, 8.0, 10.0),
                         child: Flex(
                           direction: Axis.horizontal,
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
