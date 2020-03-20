@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "633372962507",
+    "firebase_url": "https://fiverrclone-46f5b.firebaseio.com",
+    "project_id": "fiverrclone-46f5b",
+    "storage_bucket": "fiverrclone-46f5b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:633372962507:android:e2c39512c321f4dc91754e",
+        "android_client_info": {
+          "package_name": "jayg.flutter.com.flutter_fiverr_clone"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "633372962507-96uupbfbpi8g1nrkbde573t1lgvrgs4g.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDnpBf2KP9avare_ZEy2se-Si3bEtgr-fk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "633372962507-96uupbfbpi8g1nrkbde573t1lgvrgs4g.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
