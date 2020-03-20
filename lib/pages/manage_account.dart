@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_fiverr_clone/pages/earnings.dart';
-import 'package:flutter_fiverr_clone/pages/profile/profile.dart';
-import 'package:flutter_fiverr_clone/pages/settings.dart';
+
+import 'package:fiverr_clone/pages/earnings.dart';
+import 'package:fiverr_clone/pages/settings.dart';
+import 'package:fiverr_clone/pages/profile/profile.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 class ManageAccount extends StatefulWidget {

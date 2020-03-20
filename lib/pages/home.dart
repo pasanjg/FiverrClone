@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_fiverr_clone/pages/earnings.dart';
-import 'package:flutter_fiverr_clone/pages/profile/profile.dart';
 import 'dart:math';
 
+import 'package:fiverr_clone/pages/earnings.dart';
+import 'package:fiverr_clone/pages/profile/profile.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:flutter_circular_chart/flutter_circular_chart.dart';
 

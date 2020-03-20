@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:flutter_fiverr_clone/pages/main_tabs.dart';
+
+import 'package:fiverr_clone/pages/main_tabs.dart';
 
 void main() {
   runApp(FiverrClone());

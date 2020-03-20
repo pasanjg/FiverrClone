@@ -1,12 +1,11 @@
 import 'package:flutter/material.dart';
-
-import 'package:flutter_fiverr_clone/pages/home.dart';
-import 'package:flutter_fiverr_clone/pages/message_inbox.dart';
-import 'package:flutter_fiverr_clone/pages/manage_sales.dart';
-import 'package:flutter_fiverr_clone/pages/notifications.dart';
-import 'package:flutter_fiverr_clone/pages/manage_account.dart';
-
 import 'package:flutter_icons/flutter_icons.dart';
+
+import 'package:fiverr_clone/pages/home.dart';
+import 'package:fiverr_clone/pages/manage_account.dart';
+import 'package:fiverr_clone/pages/manage_sales.dart';
+import 'package:fiverr_clone/pages/message_inbox.dart';
+import 'package:fiverr_clone/pages/notifications.dart';
 
 class MainTabs extends StatefulWidget {
   @override
