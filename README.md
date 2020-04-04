@@ -9,7 +9,7 @@
     <img src="https://img.shields.io/github/issues/pasanjg/FiverrClone?style=for-the-badge"/>
     <img src="https://img.shields.io/github/forks/pasanjg/FiverrClone?style=for-the-badge"/>
     <img src="https://img.shields.io/github/stars/pasanjg/FiverrClone?style=for-the-badge"/>
-    <img src="https://img.shields.io/badge/license-MIT-green?style=for-the-badge"/>
+    <img src="https://img.shields.io/github/license/pasanjg/FiverrClone?style=for-the-badge"/>
 </p>
 
 Fiverr mobile app made with [Flutter](https://flutter.dev/)
