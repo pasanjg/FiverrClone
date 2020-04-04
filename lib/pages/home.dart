@@ -566,7 +566,7 @@ class _HomePageState extends State<HomePage>
                             ),
                           ),
                           trailing: Text(
-                            "\$1,405 / \$2,000",
+                            "\$1,214 / \$2,000",
                             style: TextStyle(
                               color: Colors.white30,
                               fontSize: _defaultFontSize,
@@ -661,7 +661,7 @@ class _HomePageState extends State<HomePage>
                                 ),
                               ),
                               subtitle: Text(
-                                "US\$65.90",
+                                "US\$36.90",
                                 style: TextStyle(
                                     color: Theme.of(context).accentColor,
                                     fontSize: 18.0,
@@ -682,7 +682,7 @@ class _HomePageState extends State<HomePage>
                                 ),
                               ),
                               subtitle: Text(
-                                "US\$36.70",
+                                "US\$8.07",
                                 style: TextStyle(
                                   color: Colors.black,
                                   fontSize: 18.0,

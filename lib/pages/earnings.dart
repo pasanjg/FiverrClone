@@ -113,7 +113,7 @@ class _EarningsPageState extends State<EarningsPage>
                       child: Column(
                         children: <Widget>[
                           Text(
-                            "US\$69.60",
+                            "US\$36.90",
                             style: TextStyle(
                               color: Theme.of(context).accentColor,
                               fontWeight: FontWeight.bold,
@@ -482,7 +482,7 @@ class _EarningsPageState extends State<EarningsPage>
                               ),
                             ),
                             Text(
-                              "US\$69.60",
+                              "US\$36.90",
                               style: TextStyle(
                                 color: Theme.of(context).accentColor,
                                 fontWeight: FontWeight.bold,
@@ -554,6 +554,7 @@ class _EarningsPageState extends State<EarningsPage>
                         Padding(
                           padding: const EdgeInsets.all(8.0),
                           child: Container(
+                            height: 45.0,
                             width: MediaQuery.of(context).size.width,
                             child: RaisedButton(
                               onPressed: () {},

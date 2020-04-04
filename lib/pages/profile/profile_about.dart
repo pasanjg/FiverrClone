@@ -42,7 +42,7 @@ class _AboutPageState extends State<AboutPage> {
               Padding(
                 padding: const EdgeInsets.only(left: 4.0),
                 child: Text(
-                  "(75)",
+                  "(56)",
                   style: TextStyle(
                     color: Colors.grey,
                   ),
@@ -101,7 +101,7 @@ class _AboutPageState extends State<AboutPage> {
             ),
           ),
           subtitle: Text(
-            "Jul 2017",
+            "Jul 2018",
             style: TextStyle(
               fontWeight: FontWeight.bold,
               color: Colors.black,
@@ -206,10 +206,9 @@ class _AboutPageState extends State<AboutPage> {
             ),
           ),
           subtitle: Text(
-            "Hi. I'm Jay, freelance graphic designer and video editor, web developer "
-            "working part time on Fiverr. I have over 6 years of experience in the "
-            "fields of computing and graphics. I'm a self learner. I also love "
-            "photography. I will guarantee a 100% customer satisfaction. Drop me a "
+            "Hi. I'm Bruce, freelance developer and designer "
+            "working part time on Fiverr. I have over 9 years of experience in the "
+            "fields of computing. I will guarantee a 100% customer satisfaction. Drop me a "
             "message I'll reply asap!",
             style: TextStyle(
               color: Colors.black,
@@ -244,7 +243,7 @@ class _AboutPageState extends State<AboutPage> {
                       padding: const EdgeInsets.only(left: 10.0, right: 10.0),
                       child: Center(
                         child: Text(
-                          "graphic design",
+                          "programming",
                           style: TextStyle(color: Colors.black),
                         ),
                       ),
@@ -268,7 +267,7 @@ class _AboutPageState extends State<AboutPage> {
                       padding: const EdgeInsets.only(left: 10.0, right: 10.0),
                       child: Center(
                         child: Text(
-                          "video editing",
+                          "development",
                           style: TextStyle(color: Colors.black),
                         ),
                       ),

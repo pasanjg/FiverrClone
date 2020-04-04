@@ -14,7 +14,7 @@ class _GigsPageState extends State<GigsPage> {
   var gigs = [
     {
       "image": "https://semantic-ui.com/images/wireframe/image.png",
-      "title": "Create an amazing flutter app",
+      "title": "Create a react application",
       "ratings": 5.0,
       "reviewCount": 15,
       "price": "\$30",
@@ -22,7 +22,7 @@ class _GigsPageState extends State<GigsPage> {
     },
     {
       "image": "https://semantic-ui.com/images/wireframe/image.png",
-      "title": "Create a simple logo animation in 24 hours",
+      "title": "Create an amazing flutter app",
       "ratings": 5.0,
       "reviewCount": 11,
       "price": "\$5",
@@ -30,7 +30,7 @@ class _GigsPageState extends State<GigsPage> {
     },
     {
       "image": "https://semantic-ui.com/images/wireframe/image.png",
-      "title": "Create an amazing glitch promo video",
+      "title": "Create a prototype with adobe xd",
       "ratings": 5.0,
       "reviewCount": 10,
       "price": "\$15",
@@ -38,7 +38,7 @@ class _GigsPageState extends State<GigsPage> {
     },
     {
       "image": "https://semantic-ui.com/images/wireframe/image.png",
-      "title": "Create an amazing mobile app promotion video",
+      "title": "Create a nodejs rest api",
       "ratings": 5.0,
       "reviewCount": 20,
       "price": "\$20",
@@ -46,7 +46,7 @@ class _GigsPageState extends State<GigsPage> {
     },
     {
       "image": "https://semantic-ui.com/images/wireframe/image.png",
-      "title": "Create a simple logo animation in 24 hours",
+      "title": "Create a logo animation",
       "ratings": 5.0,
       "reviewCount": 15,
       "price": "\$5",
@@ -54,7 +54,7 @@ class _GigsPageState extends State<GigsPage> {
     },
     {
       "image": "https://semantic-ui.com/images/wireframe/image.png",
-      "title": "Create a glitch logo opener",
+      "title": "Create a professional logo design",
       "ratings": 5.0,
       "reviewCount": 15,
       "price": "\$5",

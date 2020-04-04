@@ -23,7 +23,7 @@ class _ManageSalesState extends State<ManageSales> {
       "online": true,
       "image":
           "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2L-Zfe-iYizglLDH55UD3wXBJre7V98QwKfsBCfR_8YfvXPnN&s",
-      "gigTitle": "Create a glitch opener",
+      "gigTitle": "Create a react application",
       "date": "20 Jan 2020",
       "price": "US\$5"
     },
@@ -32,7 +32,7 @@ class _ManageSalesState extends State<ManageSales> {
       "online": false,
       "image":
           "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2L-Zfe-iYizglLDH55UD3wXBJre7V98QwKfsBCfR_8YfvXPnN&s",
-      "gigTitle": "Create a professional event promo video in 24 hours",
+      "gigTitle": "Create an angular application",
       "date": "18 Jan 2020",
       "price": "US\$35"
     },
@@ -50,7 +50,7 @@ class _ManageSalesState extends State<ManageSales> {
       "online": false,
       "image":
           "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2L-Zfe-iYizglLDH55UD3wXBJre7V98QwKfsBCfR_8YfvXPnN&s",
-      "gigTitle": "Create a simlple logo animation",
+      "gigTitle": "Create a prototype with adobe xd",
       "date": "15 Jan 2020",
       "price": "US\$15"
     },
@@ -59,7 +59,7 @@ class _ManageSalesState extends State<ManageSales> {
       "online": false,
       "image":
           "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2L-Zfe-iYizglLDH55UD3wXBJre7V98QwKfsBCfR_8YfvXPnN&s",
-      "gigTitle": "Create a glitch opener",
+      "gigTitle": "Create a nodejs rest api",
       "date": "15 Jan 2020",
       "price": "US\$5"
     },
@@ -71,7 +71,7 @@ class _ManageSalesState extends State<ManageSales> {
       "online": true,
       "image":
           "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2L-Zfe-iYizglLDH55UD3wXBJre7V98QwKfsBCfR_8YfvXPnN&s",
-      "gigTitle": "Create a flyer",
+      "gigTitle": "Create a logo animation",
       "date": "02 Dec 2019",
       "price": "US\$25"
     },
@@ -79,7 +79,7 @@ class _ManageSalesState extends State<ManageSales> {
       "username": "source",
       "image":
           "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2L-Zfe-iYizglLDH55UD3wXBJre7V98QwKfsBCfR_8YfvXPnN&s",
-      "gigTitle": "Create a professional event promo video in 24 hours",
+      "gigTitle": "Create a professional logo design",
       "date": "15 Dec 2019",
       "price": "US\$5"
     },

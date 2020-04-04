@@ -20,7 +20,8 @@ class _MessageInboxPageState extends State<MessageInboxPage> {
       "username": "codeman",
       "online": true,
       "receivedOn": "4 days ago",
-      "message": "Lorem Ipsum is a lorem ipsum",
+      "message":
+          "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
       "starred": true
     },
     {
@@ -29,7 +30,8 @@ class _MessageInboxPageState extends State<MessageInboxPage> {
       "username": "olivefam",
       "online": true,
       "receivedOn": "4 days ago",
-      "message": "Lorem Ipsum is a lorem ipsum",
+      "message":
+          "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
       "starred": false
     },
     {
@@ -38,7 +40,8 @@ class _MessageInboxPageState extends State<MessageInboxPage> {
       "username": "mediaguy",
       "online": false,
       "receivedOn": "4 days ago",
-      "message": "Lorem Ipsum is a lorem ipsum",
+      "message":
+          "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
       "starred": true
     },
     {
@@ -47,7 +50,8 @@ class _MessageInboxPageState extends State<MessageInboxPage> {
       "username": "upwardsquad",
       "online": false,
       "receivedOn": "1 week ago",
-      "message": "Lorem Ipsum is a lorem ipsum",
+      "message":
+          "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
       "starred": false
     },
     {
@@ -56,7 +60,8 @@ class _MessageInboxPageState extends State<MessageInboxPage> {
       "username": "jacob",
       "online": true,
       "receivedOn": "3 weeks ago",
-      "message": "Lorem Ipsum is a lorem ipsum",
+      "message":
+          "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
       "starred": false
     },
     {
@@ -65,7 +70,8 @@ class _MessageInboxPageState extends State<MessageInboxPage> {
       "username": "ninny",
       "online": false,
       "receivedOn": "4 weeks ago",
-      "message": "Lorem Ipsum is a lorem ipsum",
+      "message":
+          "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
       "starred": true
     },
     {
@@ -74,7 +80,8 @@ class _MessageInboxPageState extends State<MessageInboxPage> {
       "username": "samnad",
       "online": true,
       "receivedOn": "4 weeks ago",
-      "message": "Lorem Ipsum is a lorem ipsum",
+      "message":
+          "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
       "starred": false
     },
     {
@@ -83,7 +90,8 @@ class _MessageInboxPageState extends State<MessageInboxPage> {
       "username": "mikestad",
       "online": false,
       "receivedOn": "1 month ago",
-      "message": "Lorem Ipsum is a lorem ipsum",
+      "message":
+          "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
       "starred": false
     },
     {
@@ -93,7 +101,7 @@ class _MessageInboxPageState extends State<MessageInboxPage> {
       "online": true,
       "receivedOn": "2 months ago",
       "message":
-          "Lorem Ipsum is a lorem ipsum Lorem Ipsum is a lorem ipsum Lorem Ipsum is a lorem ipsum Lorem Ipsum is a lorem ipsum Lorem Ipsum is a lorem ipsum",
+          "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
       "starred": false
     },
     {
@@ -103,7 +111,7 @@ class _MessageInboxPageState extends State<MessageInboxPage> {
       "online": false,
       "receivedOn": "2 months ago",
       "message":
-          "Lorem Ipsum is a lorem ipsum Lorem Ipsum is a lorem ipsum Lorem Ipsum is a lorem ipsum Lorem Ipsum is a lorem ipsum Lorem Ipsum is a lorem ipsum",
+          "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
       "starred": false
     },
     {
@@ -113,7 +121,7 @@ class _MessageInboxPageState extends State<MessageInboxPage> {
       "online": false,
       "receivedOn": "2 months ago",
       "message":
-          "Lorem Ipsum is a lorem ipsum Lorem Ipsum is a lorem ipsum Lorem Ipsum is a lorem ipsum Lorem Ipsum is a lorem ipsum Lorem Ipsum is a lorem ipsum",
+          "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
       "starred": false
     },
     {
@@ -123,7 +131,7 @@ class _MessageInboxPageState extends State<MessageInboxPage> {
       "online": false,
       "receivedOn": "2 months ago",
       "message":
-          "Lorem Ipsum is a lorem ipsum Lorem Ipsum is a lorem ipsum Lorem Ipsum is a lorem ipsum Lorem Ipsum is a lorem ipsum Lorem Ipsum is a lorem ipsum",
+          "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
       "starred": false
     },
   ];

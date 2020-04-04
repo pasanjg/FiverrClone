@@ -88,7 +88,7 @@ class _ManageAccountState extends State<ManageAccount> {
                             height: 6.0,
                           ),
                           Text(
-                            "My personal balance: US\$65.90",
+                            "My personal balance: US\$36.90",
                             style: TextStyle(
                               color: Colors.white,
                               fontSize: 14.0,
