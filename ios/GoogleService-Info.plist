@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>633372962507-1fn5mnf3dh8sk1edaa96nlu0q8f1vesj.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.633372962507-1fn5mnf3dh8sk1edaa96nlu0q8f1vesj</string>
+	<key>API_KEY</key>
+	<string>AIzaSyC7cgUnHBsvgsHh7zR2hJnNoUt-AuoDZVM</string>
+	<key>GCM_SENDER_ID</key>
+	<string>633372962507</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.jayg.fiverrclone</string>
+	<key>PROJECT_ID</key>
+	<string>fiverrclone-46f5b</string>
+	<key>STORAGE_BUCKET</key>
+	<string>fiverrclone-46f5b.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:633372962507:ios:c3649594a516510f91754e</string>
+	<key>DATABASE_URL</key>
+	<string>https://fiverrclone-46f5b.firebaseio.com</string>
+</dict>
+</plist>

@@ -1,4 +1,4 @@
-package jayg.flutter.com.flutter_fiverr_clone;
+package com.jayg.fiverrclone;
 
 import androidx.annotation.NonNull;
 import io.flutter.embedding.android.FlutterActivity;

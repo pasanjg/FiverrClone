@@ -8,9 +8,9 @@
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:633372962507:android:e2c39512c321f4dc91754e",
+        "mobilesdk_app_id": "1:633372962507:android:73e6c859f7a9619791754e",
         "android_client_info": {
-          "package_name": "jayg.flutter.com.flutter_fiverr_clone"
+          "package_name": "com.jayg.fiverrclone"
         }
       },
       "oauth_client": [
@@ -30,6 +30,13 @@
             {
               "client_id": "633372962507-96uupbfbpi8g1nrkbde573t1lgvrgs4g.apps.googleusercontent.com",
               "client_type": 3
+            },
+            {
+              "client_id": "633372962507-1fn5mnf3dh8sk1edaa96nlu0q8f1vesj.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.jayg.fiverrclone"
+              }
             }
           ]
         }
